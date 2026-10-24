@@ -25,10 +25,10 @@ window.IPAC_DADOS = {
     { id: 'vale-sol-1', titulo: 'Relevamiento socioeconómico y cultural de la Comunidad Vale do Sol I', local: 'Tangará da Serra – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-vale-sol-1.jpg', resumo: 'Descripción a ser proporcionada por el Directorio.' },
     { id: 'vale-sol-2', titulo: 'Relevamiento socioeconómico y cultural de la Comunidad Vale do Sol II', local: 'Tangará da Serra – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-vale-sol-2.jpg', resumo: 'Descripción a ser proporcionada por el Directorio.' },
     { id: 'vale-amanhecer', titulo: 'Relevamiento socioeconómico y cultural del Asentamiento Vale do Amanhecer', local: 'Juruena – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-assentamento.jpg', resumo: 'Descripción a ser proporcionada por el Directorio.' },
-    { id: 'rio-lira-drenos', titulo: 'Producción de Agua en la Cuenca del Río Lira', local: 'Sorriso – MT', periodo: '2020 – 2021', situacao: 'concluido', imagem: 'assets/img/news-represas.jpg', resumo: 'Instalación de drenes verticales. CAT Sorriso / Mosaic Fertilizantes, con apoyo de la Municipalidad y del IFMT.' },
-    { id: 'rio-lira-diagnostico', titulo: 'Diagnóstico de la Calidad Ambiental de la Cuenca del Río Lira', local: 'Sorriso – MT', periodo: '2020', situacao: 'concluido', imagem: 'assets/img/proj-diagnostico-queimape.jpg', resumo: 'Realizado para la Municipalidad de Sorriso.' },
-    { id: 'vida-sustentavel', titulo: 'Cultivando Vida Sustentável (Cultivando Vida Sostenible)', local: 'Sorriso – MT', periodo: '2019 – 2021', situacao: 'concluido', imagem: 'assets/img/ev-arvore-2022.jpg', resumo: 'Elaboración y ejecución del proyecto con IDH (Países Bajos) / CAT Sorriso.' },
-    { id: 'qualidade-vida-rural', titulo: 'Cultivando la Calidad de Vida en el Área Rural de las Cabeceras del Pantanal', local: 'Cabeceras del Pantanal', periodo: '2014', situacao: 'concluido', imagem: 'assets/img/ev-queimape.jpg', resumo: 'Coordinación del proyecto (WWF-Brasil/HSBC), con la instalación de 40 biofosas sépticas.' }
+    { id: 'rio-lira-drenos', titulo: 'Producción de Agua en la Cuenca del Río Lira', local: 'Sorriso – MT', periodo: '2020 – 2021', situacao: 'concluido', imagem: 'assets/img/proj-rio-lira-drenos.jpg', credito: 'Decom / Prefeitura de Sorriso', resumo: 'Instalación de drenes verticales. CAT Sorriso / Mosaic Fertilizantes, con apoyo de la Municipalidad y del IFMT.' },
+    { id: 'rio-lira-diagnostico', titulo: 'Diagnóstico de la Calidad Ambiental de la Cuenca del Río Lira', local: 'Sorriso – MT', periodo: '2020', situacao: 'concluido', imagem: 'assets/img/proj-rio-lira-diagnostico.jpg', credito: 'Decom / Prefeitura de Sorriso', resumo: 'Realizado para la Municipalidad de Sorriso.' },
+    { id: 'vida-sustentavel', titulo: 'Cultivando Vida Sustentável (Cultivando Vida Sostenible)', local: 'Sorriso – MT', periodo: '2019 – 2021', situacao: 'concluido', imagem: 'assets/img/proj-vida-sustentavel.jpg', credito: 'IDH', resumo: 'Elaboración y ejecución del proyecto con IDH (Países Bajos) / CAT Sorriso.' },
+    { id: 'qualidade-vida-rural', titulo: 'Cultivando la Calidad de Vida en el Área Rural de las Cabeceras del Pantanal', local: 'Cabeceras del Pantanal', periodo: '2014', situacao: 'concluido', imagem: '', resumo: 'Coordinación del proyecto (WWF-Brasil/HSBC), con la instalación de 40 biofosas sépticas.' }
   ],
 
   eventos: [
@@ -44,6 +44,12 @@ window.IPAC_DADOS = {
     { titulo: 'PCI (Producir, Conservar e Incluir) Tangará da Serra', data: '2022-05-24', dataTexto: 'may 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
     { titulo: 'Recuperación del Manantial del Queima-Pé', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
     { titulo: 'Taller — Sostenibilidad en la Gestión de Recursos Hídricos y Residuos Sólidos', data: '2017-09-14', dataTexto: 'sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
+  ],
+
+  videos: [
+    { id: 'bqV1kv3TmQk', titulo: 'Resultado de la recuperación del manantial del Río Queima Pé', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', capa: 'assets/img/video-queimape-2025.jpg' },
+    { id: 'quTMYcfON6g', titulo: 'Estudio de la gruta del manantial del Río Bonitinho, en la Aldea Indígena del Formoso', dataTexto: 'oct 2025', local: 'Aldea Indígena del Formoso', capa: 'assets/img/video-gruta-formoso.jpg' },
+    { id: 'Ei3qk8wq0ac', titulo: 'Producción de agua con conservación de suelos, adecuación de caminos rurales y revitalización de manantiales en Paraná', local: 'Paraná, Brasil', capa: 'assets/img/video-producao-agua.jpg' }
   ],
 
   artigos: [

@@ -35,7 +35,7 @@
       descRodape: function (c) { return c.nome + '. Organização sem fins lucrativos fundada em ' + c.fundacao + ' em ' + c.cidade + ', dedicada à defesa, preservação e recuperação ambiental e cultural. Entidade de Utilidade Pública Municipal e Estadual.'; },
       navegue: 'Navegue', participe: 'Participe', loja: 'Loja IPAC', eca: 'ECA Ambiental', perguntas: 'Perguntas frequentes', privacidade: 'Política de privacidade',
       direitos: 'Todos os direitos reservados.', linksLegais: 'Links legais', rede: function (n) { return n + ' do IPAC'; },
-      emAndamento: 'Em andamento', concluido: 'Concluído', situacaoConfirmar: 'situação a confirmar', conhecaProjeto: 'Conheça o projeto', acaoProjeto: 'Ação do projeto',
+      emAndamento: 'Em andamento', concluido: 'Concluído', situacaoConfirmar: 'situação a confirmar', conhecaProjeto: 'Conheça o projeto', acaoProjeto: 'Ação do projeto', foto: 'Foto', fotoPendente: 'foto aguardando envio', assistirVideo: 'Assistir ao vídeo',
       lerArtigo: 'Ler artigo completo (PDF)', lerMateria: 'Ler matéria', emPortugues: '',
       semEventos: '<strong>Nenhum evento agendado no momento.</strong><br>Acompanhe nossas redes sociais para saber das próximas ações.',
       verifique: 'Verifique os campos destacados.', enviando: 'Enviando…', enviar: 'Enviar mensagem',
@@ -67,7 +67,7 @@
       descRodape: function (c) { return c.nome + ' (IPAC). A non-profit organization founded in ' + c.fundacao + ' in ' + c.cidade + ', Brazil, dedicated to the defense, preservation and restoration of the environment and culture. Recognized as a Public Utility Entity at the municipal and state levels.'; },
       navegue: 'Explore', participe: 'Get involved', loja: 'IPAC Store', eca: 'ECA Ambiental (Children’s Right to Nature)', perguntas: 'FAQ', privacidade: 'Privacy policy',
       direitos: 'All rights reserved.', linksLegais: 'Legal links', rede: function (n) { return 'IPAC on ' + n; },
-      emAndamento: 'Ongoing', concluido: 'Completed', situacaoConfirmar: 'status to be confirmed', conhecaProjeto: 'Explore the project', acaoProjeto: 'Project activity',
+      emAndamento: 'Ongoing', concluido: 'Completed', situacaoConfirmar: 'status to be confirmed', conhecaProjeto: 'Explore the project', acaoProjeto: 'Project activity', foto: 'Photo', fotoPendente: 'photo pending', assistirVideo: 'Watch the video',
       lerArtigo: 'Read the full article (PDF)', lerMateria: 'Read the story', emPortugues: 'in Portuguese',
       semEventos: '<strong>No events scheduled at the moment.</strong><br>Follow us on social media to hear about upcoming activities.',
       verifique: 'Please check the highlighted fields.', enviando: 'Sending…', enviar: 'Send message',
@@ -99,7 +99,7 @@
       descRodape: function (c) { return c.nome + ' (IPAC). Organización sin fines de lucro fundada en ' + c.fundacao + ' en ' + c.cidade + ', Brasil, dedicada a la defensa, preservación y recuperación ambiental y cultural. Entidad de Utilidad Pública municipal y estatal.'; },
       navegue: 'Navega', participe: 'Participa', loja: 'Tienda IPAC', eca: 'ECA Ambiental', perguntas: 'Preguntas frecuentes', privacidade: 'Política de privacidad',
       direitos: 'Todos los derechos reservados.', linksLegais: 'Enlaces legales', rede: function (n) { return n + ' del IPAC'; },
-      emAndamento: 'En curso', concluido: 'Concluido', situacaoConfirmar: 'situación a confirmar', conhecaProjeto: 'Conoce el proyecto', acaoProjeto: 'Acción del proyecto',
+      emAndamento: 'En curso', concluido: 'Concluido', situacaoConfirmar: 'situación a confirmar', conhecaProjeto: 'Conoce el proyecto', acaoProjeto: 'Acción del proyecto', foto: 'Foto', fotoPendente: 'foto pendiente', assistirVideo: 'Ver el video',
       lerArtigo: 'Leer el artículo completo (PDF)', lerMateria: 'Leer la nota', emPortugues: 'en portugués',
       semEventos: '<strong>No hay eventos programados por ahora.</strong><br>Sigue nuestras redes sociales para conocer las próximas acciones.',
       verifique: 'Revisa los campos destacados.', enviando: 'Enviando…', enviar: 'Enviar mensaje',
@@ -374,8 +374,10 @@
   }
   function cardProjeto(p) {
     var titulo = p.link ? '<a href="' + p.link + '">' + esc(p.titulo) + '</a>' : esc(p.titulo);
-    return '<article class="card">' +
-      '<div class="card-img"><img src="' + asset(p.imagem) + '" alt="" loading="lazy"></div>' +
+    var img = p.imagem ?
+      '<div class="card-img"><img src="' + asset(p.imagem) + '" alt="" loading="lazy">' + (p.credito ? '<span class="card-credito">' + T.foto + ': ' + esc(p.credito) + '</span>' : '') + '</div>' :
+      '<div class="card-img card-img-vazia">' + I.folha + '<span class="provisorio">' + T.fotoPendente + '</span></div>';
+    return '<article class="card">' + img +
       '<div class="card-corpo">' +
         '<div class="card-meta">' + etiquetaSituacao(p) + '</div>' +
         '<h3>' + titulo + '</h3>' +
@@ -489,6 +491,33 @@
     prox.innerHTML = futuros.length ? '<div class="grade grade-3">' + futuros.map(cardEvento).join('') + '</div>' :
       '<div class="vazio">' + I.calendario + '<p class="mb-0">' + T.semEventos + '</p></div>';
     ant.innerHTML = passados.map(cardEvento).join('');
+
+    // Vídeos: só a capa local até o clique, para não carregar o YouTube (e seus cookies) sem necessidade
+    var vid = $('#eventos-videos');
+    if (!vid) return;
+    vid.innerHTML = (DADOS.videos || []).map(cardVideo).join('');
+    vid.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-video]');
+      if (!b) return;
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(b.getAttribute('data-video')) + '?autoplay=1&rel=0';
+      f.title = b.getAttribute('data-titulo');
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      f.referrerPolicy = 'strict-origin-when-cross-origin';
+      b.replaceWith(f);
+    });
+  }
+  function cardVideo(v) {
+    return '<article class="card card-video">' +
+      '<div class="video-quadro"><button class="video-capa" type="button" data-video="' + esc(v.id) + '" data-titulo="' + esc(v.titulo) + '" aria-label="' + T.assistirVideo + ': ' + esc(v.titulo) + '">' +
+        '<img src="' + asset(v.capa) + '" alt="" loading="lazy">' +
+        '<span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span>' +
+      '</button></div>' +
+      '<div class="card-corpo">' +
+        '<h3>' + esc(v.titulo) + '</h3>' +
+        '<div class="card-rodape card-meta">' + I.local.replace('<svg', '<svg width="14" height="14"') + ' ' + esc(v.local) + (v.dataTexto ? ' · ' + esc(v.dataTexto) : '') + '</div>' +
+      '</div></article>';
   }
 
   function renderArtigos() {

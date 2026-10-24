@@ -8,7 +8,9 @@
 window.IPAC_DADOS = {
 
   /* situacao: 'andamento' | 'concluido'
-     confirmar: true  → mostra a etiqueta "situação a confirmar" (protótipo) */
+     confirmar: true  → mostra a etiqueta "situação a confirmar" (protótipo)
+     credito: 'Autor' → mostra "Foto: Autor" sobre a imagem
+     imagem: ''  → mostra o espaço "foto aguardando envio" */
   projetos: [
     {
       id: 'cultivando-agua-boa-tangara',
@@ -29,10 +31,10 @@ window.IPAC_DADOS = {
     { id: 'vale-sol-1', titulo: 'Levantamento socioeconômico-cultural da Comunidade Vale do Sol I', local: 'Tangará da Serra – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-vale-sol-1.jpg', resumo: 'Descrição a ser fornecida pela Diretoria.' },
     { id: 'vale-sol-2', titulo: 'Levantamento socioeconômico-cultural da Comunidade Vale do Sol II', local: 'Tangará da Serra – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-vale-sol-2.jpg', resumo: 'Descrição a ser fornecida pela Diretoria.' },
     { id: 'vale-amanhecer', titulo: 'Levantamento socioeconômico-cultural do Assentamento Vale do Amanhecer', local: 'Juruena – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-assentamento.jpg', resumo: 'Descrição a ser fornecida pela Diretoria.' },
-    { id: 'rio-lira-drenos', titulo: 'Produção de Água na Bacia do Rio Lira', local: 'Sorriso – MT', periodo: '2020 – 2021', situacao: 'concluido', imagem: 'assets/img/news-represas.jpg', resumo: 'Instalação de drenos verticais. CAT Sorriso / Mosaic Fertilizantes, com apoio da Prefeitura Municipal e do IFMT.' },
-    { id: 'rio-lira-diagnostico', titulo: 'Diagnóstico da Qualidade Ambiental da Bacia do Rio Lira', local: 'Sorriso – MT', periodo: '2020', situacao: 'concluido', imagem: 'assets/img/proj-diagnostico-queimape.jpg', resumo: 'Executado para a Prefeitura Municipal de Sorriso.' },
-    { id: 'vida-sustentavel', titulo: 'Cultivando Vida Sustentável', local: 'Sorriso – MT', periodo: '2019 – 2021', situacao: 'concluido', imagem: 'assets/img/ev-arvore-2022.jpg', resumo: 'Elaboração e execução do projeto com IDH Holanda / CAT Sorriso.' },
-    { id: 'qualidade-vida-rural', titulo: 'Cultivando a Qualidade de Vida na Área Rural nas Cabeceiras do Pantanal', local: 'Cabeceiras do Pantanal', periodo: '2014', situacao: 'concluido', imagem: 'assets/img/ev-queimape.jpg', resumo: 'Coordenação do projeto (WWF-Brasil/HSBC), com a instalação de 40 biofossas.' }
+    { id: 'rio-lira-drenos', titulo: 'Produção de Água na Bacia do Rio Lira', local: 'Sorriso – MT', periodo: '2020 – 2021', situacao: 'concluido', imagem: 'assets/img/proj-rio-lira-drenos.jpg', credito: 'Decom / Prefeitura de Sorriso', resumo: 'Instalação de drenos verticais. CAT Sorriso / Mosaic Fertilizantes, com apoio da Prefeitura Municipal e do IFMT.' },
+    { id: 'rio-lira-diagnostico', titulo: 'Diagnóstico da Qualidade Ambiental da Bacia do Rio Lira', local: 'Sorriso – MT', periodo: '2020', situacao: 'concluido', imagem: 'assets/img/proj-rio-lira-diagnostico.jpg', credito: 'Decom / Prefeitura de Sorriso', resumo: 'Executado para a Prefeitura Municipal de Sorriso.' },
+    { id: 'vida-sustentavel', titulo: 'Cultivando Vida Sustentável', local: 'Sorriso – MT', periodo: '2019 – 2021', situacao: 'concluido', imagem: 'assets/img/proj-vida-sustentavel.jpg', credito: 'IDH', resumo: 'Elaboração e execução do projeto com IDH Holanda / CAT Sorriso.' },
+    { id: 'qualidade-vida-rural', titulo: 'Cultivando a Qualidade de Vida na Área Rural nas Cabeceiras do Pantanal', local: 'Cabeceiras do Pantanal', periodo: '2014', situacao: 'concluido', imagem: '', resumo: 'Coordenação do projeto (WWF-Brasil/HSBC), com a instalação de 40 biofossas.' }
   ],
 
   /* data: 'AAAA-MM-DD' (use o dia 01 quando só se sabe o mês/ano).
@@ -50,6 +52,14 @@ window.IPAC_DADOS = {
     { titulo: 'PCI Tangará da Serra', data: '2022-05-24', dataTexto: 'mai 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
     { titulo: 'Recuperação da Nascente do Queima-Pé', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
     { titulo: 'Workshop — Sustentabilidade na Gestão de Recursos Hídricos e Resíduos Sólidos', data: '2017-09-14', dataTexto: 'set 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
+  ],
+
+  /* Vídeos do canal do IPAC no YouTube. id: o código que aparece depois de
+     "youtu.be/" ou "watch?v=". capa: imagem mostrada até o visitante clicar. */
+  videos: [
+    { id: 'bqV1kv3TmQk', titulo: 'Resultado da recuperação da nascente do Rio Queima Pé', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', capa: 'assets/img/video-queimape-2025.jpg' },
+    { id: 'quTMYcfON6g', titulo: 'Estudo da gruta da nascente do Rio Bonitinho, na Aldeia Indígena do Formoso', dataTexto: 'out 2025', local: 'Aldeia Indígena do Formoso', capa: 'assets/img/video-gruta-formoso.jpg' },
+    { id: 'Ei3qk8wq0ac', titulo: 'Exemplos de produção de água com conservação de solos, adequação de estradas rurais e revitalização de nascentes no Paraná', local: 'Paraná', capa: 'assets/img/video-producao-agua.jpg' }
   ],
 
   artigos: [

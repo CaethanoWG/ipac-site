@@ -25,10 +25,10 @@ window.IPAC_DADOS = {
     { id: 'vale-sol-1', titulo: 'Socioeconomic and Cultural Survey of the Vale do Sol I Community', local: 'Tangará da Serra – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-vale-sol-1.jpg', resumo: 'Description to be provided by the Board.' },
     { id: 'vale-sol-2', titulo: 'Socioeconomic and Cultural Survey of the Vale do Sol II Community', local: 'Tangará da Serra – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-vale-sol-2.jpg', resumo: 'Description to be provided by the Board.' },
     { id: 'vale-amanhecer', titulo: 'Socioeconomic and Cultural Survey of the Vale do Amanhecer Settlement', local: 'Juruena – MT', situacao: 'concluido', confirmar: true, imagem: 'assets/img/proj-assentamento.jpg', resumo: 'Description to be provided by the Board.' },
-    { id: 'rio-lira-drenos', titulo: 'Water Production in the Lira River Basin', local: 'Sorriso – MT', periodo: '2020 – 2021', situacao: 'concluido', imagem: 'assets/img/news-represas.jpg', resumo: 'Installation of vertical drains. CAT Sorriso / Mosaic Fertilizantes, supported by the Municipality and IFMT.' },
-    { id: 'rio-lira-diagnostico', titulo: 'Environmental Quality Assessment of the Lira River Basin', local: 'Sorriso – MT', periodo: '2020', situacao: 'concluido', imagem: 'assets/img/proj-diagnostico-queimape.jpg', resumo: 'Carried out for the Municipality of Sorriso.' },
-    { id: 'vida-sustentavel', titulo: 'Cultivando Vida Sustentável (Growing Sustainable Living)', local: 'Sorriso – MT', periodo: '2019 – 2021', situacao: 'concluido', imagem: 'assets/img/ev-arvore-2022.jpg', resumo: 'Project designed and carried out with IDH (Netherlands) / CAT Sorriso.' },
-    { id: 'qualidade-vida-rural', titulo: 'Improving Rural Quality of Life at the Pantanal Headwaters', local: 'Pantanal headwaters', periodo: '2014', situacao: 'concluido', imagem: 'assets/img/ev-queimape.jpg', resumo: 'Project coordination (WWF-Brasil/HSBC), including the installation of 40 bio-digester septic tanks.' }
+    { id: 'rio-lira-drenos', titulo: 'Water Production in the Lira River Basin', local: 'Sorriso – MT', periodo: '2020 – 2021', situacao: 'concluido', imagem: 'assets/img/proj-rio-lira-drenos.jpg', credito: 'Decom / Prefeitura de Sorriso', resumo: 'Installation of vertical drains. CAT Sorriso / Mosaic Fertilizantes, supported by the Municipality and IFMT.' },
+    { id: 'rio-lira-diagnostico', titulo: 'Environmental Quality Assessment of the Lira River Basin', local: 'Sorriso – MT', periodo: '2020', situacao: 'concluido', imagem: 'assets/img/proj-rio-lira-diagnostico.jpg', credito: 'Decom / Prefeitura de Sorriso', resumo: 'Carried out for the Municipality of Sorriso.' },
+    { id: 'vida-sustentavel', titulo: 'Cultivando Vida Sustentável (Growing Sustainable Living)', local: 'Sorriso – MT', periodo: '2019 – 2021', situacao: 'concluido', imagem: 'assets/img/proj-vida-sustentavel.jpg', credito: 'IDH', resumo: 'Project designed and carried out with IDH (Netherlands) / CAT Sorriso.' },
+    { id: 'qualidade-vida-rural', titulo: 'Improving Rural Quality of Life at the Pantanal Headwaters', local: 'Pantanal headwaters', periodo: '2014', situacao: 'concluido', imagem: '', resumo: 'Project coordination (WWF-Brasil/HSBC), including the installation of 40 bio-digester septic tanks.' }
   ],
 
   eventos: [
@@ -44,6 +44,12 @@ window.IPAC_DADOS = {
     { titulo: 'PCI (Produce, Conserve and Include) Tangará da Serra', data: '2022-05-24', dataTexto: 'May 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
     { titulo: 'Restoration of the Queima-Pé spring', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
     { titulo: 'Workshop — Sustainability in Water Resources and Solid Waste Management', data: '2017-09-14', dataTexto: 'Sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
+  ],
+
+  videos: [
+    { id: 'bqV1kv3TmQk', titulo: 'Results of the restoration of the Queima Pé River spring', dataTexto: 'Jul 2025', local: 'Tangará da Serra – MT', capa: 'assets/img/video-queimape-2025.jpg' },
+    { id: 'quTMYcfON6g', titulo: 'Study of the Bonitinho River spring cave, Formoso Indigenous Village', dataTexto: 'Oct 2025', local: 'Formoso Indigenous Village', capa: 'assets/img/video-gruta-formoso.jpg' },
+    { id: 'Ei3qk8wq0ac', titulo: 'Water production through soil conservation, rural road improvements and spring restoration in Paraná', local: 'Paraná, Brazil', capa: 'assets/img/video-producao-agua.jpg' }
   ],
 
   artigos: [

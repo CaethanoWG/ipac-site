@@ -4,9 +4,8 @@
    que passa a mostrar "em configuração" em vez de simular algo.
    ========================================================================== */
 window.IPAC_CONFIG = {
-  // A CONFIRMAR: o site atual anuncia o novo nome abaixo; o prompt da Diretoria
-  // cita "Instituto de Proteção Ambiental e Cultural". Defina o nome oficial.
-  nome: 'Instituto de Preservação Ambiental e Conservação',
+  // Nome oficial confirmado pela Diretoria (out/2026).
+  nome: 'Instituto Pantanal Amazônia de Conservação',
   sigla: 'IPAC',
   fundacao: 2004,
   cidade: 'Tangará da Serra – MT',
