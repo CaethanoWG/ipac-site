@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Contact — IPAC</title>
+  <meta name="description" content="Get in touch with IPAC: partnerships, volunteering, press, questions and suggestions.">
+  <link rel="alternate" hreflang="pt-BR" href="../contato.html">
+  <link rel="alternate" hreflang="es" href="../es/contato.html">
+  <meta name="theme-color" content="#10301f">
+  <link rel="icon" href="../assets/img/logo-marca.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="contato">
+  <div id="site-header"></div>
+
+  <main id="conteudo">
+    <section class="pagina-topo">
+      <div class="container">
+        <nav class="trilha" aria-label="You are here"><a href="index.html">Home</a><span>/</span>Contact</nav>
+        <h1>Contact</h1>
+        <p>We’re here to listen. Talk to us about our projects, partnerships or volunteering, or simply share your ideas.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container duas-colunas topo col-larga">
+        <div>
+          <h2 style="font-size:1.6rem">Send us a message</h2>
+          <p class="texto-suave">Fields marked * are required. We reply to the e-mail you provide (in Portuguese, English or Spanish).</p>
+          <form class="form" id="form-contato" novalidate>
+            <input type="hidden" name="idioma" value="en">
+            <div class="form-linha">
+              <div class="campo"><label for="nome">Name *</label><input id="nome" name="nome" type="text" autocomplete="name" required maxlength="120"><span class="erro">Please enter your name.</span></div>
+              <div class="campo"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160"><span class="erro">Please enter a valid e-mail.</span></div>
+            </div>
+            <div class="form-linha">
+              <div class="campo"><label for="telefone">Phone <span class="opcional">(optional)</span></label><input id="telefone" name="telefone" type="tel" autocomplete="tel" maxlength="30"></div>
+              <div class="campo"><label for="assunto">Subject *</label>
+                <select id="assunto" name="assunto" required>
+                  <option value="">Select…</option>
+                  <option>Question or information</option>
+                  <option>Partnerships and projects</option>
+                  <option>I want to volunteer</option>
+                  <option>Donations</option>
+                  <option>IPAC Store</option>
+                  <option>Press</option>
+                  <option>Other</option>
+                </select><span class="erro">Please choose a subject.</span></div>
+            </div>
+            <div class="campo"><label for="mensagem">Message *</label><textarea id="mensagem" name="mensagem" required maxlength="4000"></textarea><span class="erro">Please write your message.</span></div>
+            <div class="campo-isca" aria-hidden="true"><label for="site">Leave blank</label><input id="site" name="site" type="text" tabindex="-1" autocomplete="off"></div>
+            <label class="consentimento"><input type="checkbox" name="consentimento" value="sim" required> <span>I agree that IPAC may use my data only to reply to this message, as described in the <a href="privacidade.html">Privacy policy</a>. *</span></label>
+            <div id="form-aviso" class="aviso" role="status" hidden></div>
+            <div><button class="btn btn-primario" type="submit">Send message</button></div>
+          </form>
+        </div>
+
+        <aside class="cartao-contato" aria-label="Contact information">
+          <h2>Reach us directly</h2>
+          <ul id="contato-dados"></ul>
+          <p class="pequeno mt-2" style="color:var(--verde-200)">Follow IPAC on social media:</p>
+          <div id="contato-redes"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/dados.en.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script>
+    (function () {
+      var c = window.IPAC_CONFIG;
+      var tel = c.telefone ? '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><small>Phone / WhatsApp (Brazil)</small><a href="tel:+55' + c.telefone.replace(/\D/g, '') + '">+55 ' + c.telefone + '</a></div></li>' : '';
+      document.getElementById('contato-dados').innerHTML =
+        '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><div><small>E-mail</small><a href="mailto:' + c.email + '">' + c.email + '</a></div></li>' + tel +
+        '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Address</small>' + (c.endereco || c.cidade + ', Brazil <span class="provisorio">address to be confirmed</span>') + '</div></li>';
+      var redes = document.querySelector('.rodape .redes-rodape');
+      if (redes) document.getElementById('contato-redes').innerHTML = redes.outerHTML;
+    })();
+  </script>
+</body>
+</html>
