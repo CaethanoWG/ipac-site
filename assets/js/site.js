@@ -35,7 +35,7 @@
       descRodape: function (c) { return c.nome + '. Organização sem fins lucrativos fundada em ' + c.fundacao + ' em ' + c.cidade + ', dedicada à defesa, preservação e recuperação ambiental e cultural. Entidade de Utilidade Pública Municipal e Estadual.'; },
       navegue: 'Navegue', participe: 'Participe', loja: 'Loja IPAC', eca: 'ECA Ambiental', perguntas: 'Perguntas frequentes', privacidade: 'Política de privacidade',
       direitos: 'Todos os direitos reservados.', linksLegais: 'Links legais', rede: function (n) { return n + ' do IPAC'; },
-      emAndamento: 'Em andamento', concluido: 'Concluído', situacaoConfirmar: 'situação a confirmar', conhecaProjeto: 'Conheça o projeto', acaoProjeto: 'Ação do projeto', foto: 'Foto', fotoPendente: 'foto aguardando envio', assistirVideo: 'Assistir ao vídeo',
+      emAndamento: 'Em andamento', concluido: 'Concluído', situacaoConfirmar: 'situação a confirmar', dataConfirmar: 'data a confirmar', conhecaProjeto: 'Conheça o projeto', acaoProjeto: 'Ação do projeto', foto: 'Foto', fotoPendente: 'foto aguardando envio', assistirVideo: 'Assistir ao vídeo',
       lerArtigo: 'Ler artigo completo (PDF)', lerMateria: 'Ler matéria', emPortugues: '',
       verGaleria: 'Ver fotos e vídeos', fotos: function (n) { return n + (n === 1 ? ' foto' : ' fotos'); }, videos: function (n) { return n + (n === 1 ? ' vídeo' : ' vídeos'); },
       tituloFotos: 'Fotos', tituloVideos: 'Vídeos', voltarPara: function (s) { return 'Voltar para ' + s; }, ampliarFoto: function (i, n) { return 'Ampliar foto ' + i + ' de ' + n; },
@@ -71,7 +71,7 @@
       descRodape: function (c) { return c.nome + ' (IPAC). A non-profit organization founded in ' + c.fundacao + ' in ' + c.cidade + ', Brazil, dedicated to the defense, preservation and restoration of the environment and culture. Recognized as a Public Utility Entity at the municipal and state levels.'; },
       navegue: 'Explore', participe: 'Get involved', loja: 'IPAC Store', eca: 'ECA Ambiental (Children’s Right to Nature)', perguntas: 'FAQ', privacidade: 'Privacy policy',
       direitos: 'All rights reserved.', linksLegais: 'Legal links', rede: function (n) { return 'IPAC on ' + n; },
-      emAndamento: 'Ongoing', concluido: 'Completed', situacaoConfirmar: 'status to be confirmed', conhecaProjeto: 'Explore the project', acaoProjeto: 'Project activity', foto: 'Photo', fotoPendente: 'photo pending', assistirVideo: 'Watch the video',
+      emAndamento: 'Ongoing', concluido: 'Completed', situacaoConfirmar: 'status to be confirmed', dataConfirmar: 'date to be confirmed', conhecaProjeto: 'Explore the project', acaoProjeto: 'Project activity', foto: 'Photo', fotoPendente: 'photo pending', assistirVideo: 'Watch the video',
       lerArtigo: 'Read the full article (PDF)', lerMateria: 'Read the story', emPortugues: 'in Portuguese',
       verGaleria: 'See photos and videos', fotos: function (n) { return n + (n === 1 ? ' photo' : ' photos'); }, videos: function (n) { return n + (n === 1 ? ' video' : ' videos'); },
       tituloFotos: 'Photos', tituloVideos: 'Videos', voltarPara: function (s) { return 'Back to ' + s; }, ampliarFoto: function (i, n) { return 'Enlarge photo ' + i + ' of ' + n; },
@@ -107,7 +107,7 @@
       descRodape: function (c) { return c.nome + ' (IPAC). Organización sin fines de lucro fundada en ' + c.fundacao + ' en ' + c.cidade + ', Brasil, dedicada a la defensa, preservación y recuperación ambiental y cultural. Entidad de Utilidad Pública municipal y estatal.'; },
       navegue: 'Navega', participe: 'Participa', loja: 'Tienda IPAC', eca: 'ECA Ambiental', perguntas: 'Preguntas frecuentes', privacidade: 'Política de privacidad',
       direitos: 'Todos los derechos reservados.', linksLegais: 'Enlaces legales', rede: function (n) { return n + ' del IPAC'; },
-      emAndamento: 'En curso', concluido: 'Concluido', situacaoConfirmar: 'situación a confirmar', conhecaProjeto: 'Conoce el proyecto', acaoProjeto: 'Acción del proyecto', foto: 'Foto', fotoPendente: 'foto pendiente', assistirVideo: 'Ver el video',
+      emAndamento: 'En curso', concluido: 'Concluido', situacaoConfirmar: 'situación a confirmar', dataConfirmar: 'fecha a confirmar', conhecaProjeto: 'Conoce el proyecto', acaoProjeto: 'Acción del proyecto', foto: 'Foto', fotoPendente: 'foto pendiente', assistirVideo: 'Ver el video',
       lerArtigo: 'Leer el artículo completo (PDF)', lerMateria: 'Leer la nota', emPortugues: 'en portugués',
       verGaleria: 'Ver fotos y videos', fotos: function (n) { return n + (n === 1 ? ' foto' : ' fotos'); }, videos: function (n) { return n + (n === 1 ? ' video' : ' videos'); },
       tituloFotos: 'Fotos', tituloVideos: 'Videos', voltarPara: function (s) { return 'Volver a ' + s; }, ampliarFoto: function (i, n) { return 'Ampliar foto ' + i + ' de ' + n; },
@@ -442,7 +442,7 @@
       imgCard(e.imagem, g) +
       '<div class="card-corpo">' +
         '<h3>' + (g ? '<a href="' + g.href + '">' + esc(e.titulo) + '</a>' : esc(e.titulo)) + '</h3>' +
-        '<div class="card-rodape card-meta">' + I.local.replace('<svg', '<svg width="14" height="14"') + ' ' + esc(e.local) + '</div>' +
+        '<div class="card-rodape card-meta">' + I.local.replace('<svg', '<svg width="14" height="14"') + ' ' + esc(e.local) + (e.confirmar ? ' <span class="provisorio">' + T.dataConfirmar + '</span>' : '') + '</div>' +
       '</div></article>';
   }
   function cardArtigo(a) {
@@ -528,11 +528,6 @@
     prox.innerHTML = futuros.length ? '<div class="grade grade-3">' + futuros.map(cardEvento).join('') + '</div>' :
       '<div class="vazio">' + I.calendario + '<p class="mb-0">' + T.semEventos + '</p></div>';
     ant.innerHTML = passados.map(cardEvento).join('');
-
-    var vid = $('#eventos-videos');
-    if (!vid) return;
-    vid.innerHTML = (DADOS.videos || []).map(cardVideo).join('');
-    ativarVideos(vid);
   }
   // Vídeos: só a capa local até o clique, para não carregar o YouTube (e seus cookies) sem necessidade
   function ativarVideos(vid) {
@@ -586,7 +581,10 @@
       return '<li><button type="button" data-foto="' + i + '" aria-label="' + T.ampliarFoto(i + 1, n) + '"><img src="' + asset(f) + '" alt="" loading="lazy"></button></li>';
     }).join('') + '</ul>';
     if (g.videos.length) html += '<h2 class="galeria-secao">' + T.tituloVideos + ' <span>(' + g.videos.length + ')</span></h2><div class="grade grade-3 galeria-videos">' + g.videos.map(function (v, i) {
-      return cardVideo({ id: v, titulo: item.titulo + ' — ' + T.tituloVideos.toLowerCase() + ' ' + (i + 1), capa: 'assets/img/galerias/videos/' + v + '.jpg' });
+      var titulo = item.titulo + ' — ' + T.tituloVideos.toLowerCase() + ' ' + (i + 1);
+      // vídeo guardado no próprio site (.mp4): player do navegador, sem YouTube
+      if (/\.mp4$/i.test(v)) return '<article class="card card-video"><div class="video-quadro"><video controls preload="metadata" playsinline src="' + asset('assets/img/galerias/' + g.id + '/' + v) + '#t=0.1" title="' + esc(titulo) + '"></video></div></article>';
+      return cardVideo({ id: v, titulo: titulo, capa: 'assets/img/galerias/videos/' + v + '.jpg' });
     }).join('') + '</div>';
     el.innerHTML = html;
     var vids = $('.galeria-videos', el);

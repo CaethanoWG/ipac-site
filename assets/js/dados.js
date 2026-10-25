@@ -42,6 +42,7 @@ window.IPAC_DADOS = {
      id: liga o evento (ou projeto) às suas fotos e vídeos em galerias.js. */
   eventos: [
     { id: 'formoso-2025', titulo: 'Diagnóstico, projeto e reparação de processo erosivo e proteção da gruta da nascente do Rio Bonitinho', data: '2025-10-30', dataTexto: '30 out 2025', local: 'Aldeia Indígena do Formoso', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'producao-agua-parana', titulo: 'Exemplos de produção de água com conservação de solos, adequação de estradas rurais e revitalização de nascentes no Paraná', data: '2025-07-29', dataTexto: 'jul 2025', confirmar: true, local: 'Paraná', imagem: 'assets/img/video-producao-agua.jpg' },
     { id: 'queimape-resultado-2025', titulo: 'Resultado da recuperação da nascente do Rio Queima Pé', data: '2025-07-01', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
     { id: 'dia-da-agua-2025', titulo: 'Dia da Água 2025 — Nascente do Rio Queima Pé', data: '2025-03-22', dataTexto: 'mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
     { id: 'dia-arvore-2024-cristalino', titulo: 'Cultivando Água Boa e Dia da Árvore — Nascente 059', data: '2024-09-21', dataTexto: 'set 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-10.jpg' },
@@ -53,14 +54,6 @@ window.IPAC_DADOS = {
     { id: 'pci-2022', titulo: 'PCI Tangará da Serra', data: '2022-05-24', dataTexto: 'mai 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
     { id: 'queimape-2021', titulo: 'Recuperação da Nascente do Queima-Pé', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
     { id: 'workshop-2017', titulo: 'Workshop — Sustentabilidade na Gestão de Recursos Hídricos e Resíduos Sólidos', data: '2017-09-14', dataTexto: 'set 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
-  ],
-
-  /* Vídeos do canal do IPAC no YouTube. id: o código que aparece depois de
-     "youtu.be/" ou "watch?v=". capa: imagem mostrada até o visitante clicar. */
-  videos: [
-    { id: 'bqV1kv3TmQk', titulo: 'Resultado da recuperação da nascente do Rio Queima Pé', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', capa: 'assets/img/video-queimape-2025.jpg' },
-    { id: 'quTMYcfON6g', titulo: 'Estudo da gruta da nascente do Rio Bonitinho, na Aldeia Indígena do Formoso', dataTexto: 'out 2025', local: 'Aldeia Indígena do Formoso', capa: 'assets/img/video-gruta-formoso.jpg' },
-    { id: 'Ei3qk8wq0ac', titulo: 'Exemplos de produção de água com conservação de solos, adequação de estradas rurais e revitalização de nascentes no Paraná', local: 'Paraná', capa: 'assets/img/video-producao-agua.jpg' }
   ],
 
   artigos: [

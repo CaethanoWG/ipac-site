@@ -33,6 +33,7 @@ window.IPAC_DADOS = {
 
   eventos: [
     { id: 'formoso-2025', titulo: 'Diagnóstico, proyecto y reparación de un proceso erosivo y protección de la gruta del manantial del Río Bonitinho', data: '2025-10-30', dataTexto: '30 oct 2025', local: 'Aldea Indígena del Formoso', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'producao-agua-parana', titulo: 'Producción de agua con conservación de suelos, adecuación de caminos rurales y revitalización de manantiales en Paraná', data: '2025-07-29', dataTexto: 'jul 2025', confirmar: true, local: 'Paraná, Brasil', imagem: 'assets/img/video-producao-agua.jpg' },
     { id: 'queimape-resultado-2025', titulo: 'Resultado de la recuperación del manantial del Río Queima Pé', data: '2025-07-01', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
     { id: 'dia-da-agua-2025', titulo: 'Día del Agua 2025 — Manantial del Río Queima Pé', data: '2025-03-22', dataTexto: 'mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
     { id: 'dia-arvore-2024-cristalino', titulo: 'Cultivando Água Boa y Día del Árbol — Manantial 059', data: '2024-09-21', dataTexto: 'sep 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-10.jpg' },
@@ -44,12 +45,6 @@ window.IPAC_DADOS = {
     { id: 'pci-2022', titulo: 'PCI (Producir, Conservar e Incluir) Tangará da Serra', data: '2022-05-24', dataTexto: 'may 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
     { id: 'queimape-2021', titulo: 'Recuperación del Manantial del Queima-Pé', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
     { id: 'workshop-2017', titulo: 'Taller — Sostenibilidad en la Gestión de Recursos Hídricos y Residuos Sólidos', data: '2017-09-14', dataTexto: 'sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
-  ],
-
-  videos: [
-    { id: 'bqV1kv3TmQk', titulo: 'Resultado de la recuperación del manantial del Río Queima Pé', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', capa: 'assets/img/video-queimape-2025.jpg' },
-    { id: 'quTMYcfON6g', titulo: 'Estudio de la gruta del manantial del Río Bonitinho, en la Aldea Indígena del Formoso', dataTexto: 'oct 2025', local: 'Aldea Indígena del Formoso', capa: 'assets/img/video-gruta-formoso.jpg' },
-    { id: 'Ei3qk8wq0ac', titulo: 'Producción de agua con conservación de suelos, adecuación de caminos rurales y revitalización de manantiales en Paraná', local: 'Paraná, Brasil', capa: 'assets/img/video-producao-agua.jpg' }
   ],
 
   artigos: [

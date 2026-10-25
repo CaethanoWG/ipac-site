@@ -5,13 +5,15 @@
    - fotos: quantidade de fotos em assets/img/galerias/<id>/ (01.jpg, 02.jpg…)
    - imagens: (opcional) outras fotos do site, mostradas antes das numeradas
    - videos: códigos do YouTube (capa em assets/img/galerias/videos/<código>.jpg)
+     ou um arquivo .mp4 guardado na pasta do próprio evento (ex.: 'video-01.mp4')
    Fotos e vídeos copiados do site atual (ipac.eco.br) em out/2026.
    ========================================================================== */
 
 window.IPAC_GALERIAS = [
-  { id: 'formoso-2025', fotos: 0, imagens: ['assets/img/news-formoso.jpg', 'assets/img/news-forca-tarefa.jpg'], videos: ['quTMYcfON6g'] },
-  { id: 'queimape-resultado-2025', fotos: 0, imagens: ['assets/img/news-queimape-2025.jpg'], videos: ['bqV1kv3TmQk'] },
-  { id: 'dia-da-agua-2025', fotos: 3, videos: ['NRv2Ch5LJUY', 'hezFekOnC9A', 'LPxir7uWnwE'] },
+  { id: 'formoso-2025', fotos: 9, imagens: ['assets/img/news-formoso.jpg', 'assets/img/news-forca-tarefa.jpg'], videos: ['quTMYcfON6g'] },
+  { id: 'queimape-resultado-2025', fotos: 5, imagens: ['assets/img/news-queimape-2025.jpg'], videos: ['bqV1kv3TmQk', 'video-01.mp4'] },
+  { id: 'producao-agua-parana', fotos: 0, videos: ['Ei3qk8wq0ac'] },
+  { id: 'dia-da-agua-2025', fotos: 4, videos: ['NRv2Ch5LJUY', 'hezFekOnC9A', 'LPxir7uWnwE'] },
   { id: 'dia-arvore-2024-cristalino', fotos: 13, videos: [] },
   { id: 'dia-arvore-2024-ararao', fotos: 13, videos: [] },
   { id: 'dia-da-agua-2024', fotos: 10, videos: ['bYijywIDcEw'] },

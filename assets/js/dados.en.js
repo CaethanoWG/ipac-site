@@ -33,6 +33,7 @@ window.IPAC_DADOS = {
 
   eventos: [
     { id: 'formoso-2025', titulo: 'Assessment, design and repair of an erosion process and protection of the Bonitinho River spring cave', data: '2025-10-30', dataTexto: '30 Oct 2025', local: 'Formoso Indigenous Village', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'producao-agua-parana', titulo: 'Water production through soil conservation, rural road improvements and spring restoration in Paraná', data: '2025-07-29', dataTexto: 'Jul 2025', confirmar: true, local: 'Paraná, Brazil', imagem: 'assets/img/video-producao-agua.jpg' },
     { id: 'queimape-resultado-2025', titulo: 'Results of the Queima Pé River spring restoration', data: '2025-07-01', dataTexto: 'Jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
     { id: 'dia-da-agua-2025', titulo: 'World Water Day 2025 — Queima Pé River spring', data: '2025-03-22', dataTexto: 'Mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
     { id: 'dia-arvore-2024-cristalino', titulo: 'Cultivando Água Boa and Tree Day — Spring 059', data: '2024-09-21', dataTexto: 'Sep 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-10.jpg' },
@@ -44,12 +45,6 @@ window.IPAC_DADOS = {
     { id: 'pci-2022', titulo: 'PCI (Produce, Conserve and Include) Tangará da Serra', data: '2022-05-24', dataTexto: 'May 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
     { id: 'queimape-2021', titulo: 'Restoration of the Queima-Pé spring', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
     { id: 'workshop-2017', titulo: 'Workshop — Sustainability in Water Resources and Solid Waste Management', data: '2017-09-14', dataTexto: 'Sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
-  ],
-
-  videos: [
-    { id: 'bqV1kv3TmQk', titulo: 'Results of the restoration of the Queima Pé River spring', dataTexto: 'Jul 2025', local: 'Tangará da Serra – MT', capa: 'assets/img/video-queimape-2025.jpg' },
-    { id: 'quTMYcfON6g', titulo: 'Study of the Bonitinho River spring cave, Formoso Indigenous Village', dataTexto: 'Oct 2025', local: 'Formoso Indigenous Village', capa: 'assets/img/video-gruta-formoso.jpg' },
-    { id: 'Ei3qk8wq0ac', titulo: 'Water production through soil conservation, rural road improvements and spring restoration in Paraná', local: 'Paraná, Brazil', capa: 'assets/img/video-producao-agua.jpg' }
   ],
 
   artigos: [
