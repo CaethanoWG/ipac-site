@@ -11,7 +11,7 @@
 
 window.IPAC_GALERIAS = [
   { id: 'formoso-2025', fotos: 9, imagens: ['assets/img/news-formoso.jpg', 'assets/img/news-forca-tarefa.jpg'], videos: ['quTMYcfON6g'] },
-  { id: 'queimape-resultado-2025', fotos: 5, imagens: ['assets/img/news-queimape-2025.jpg'], videos: ['bqV1kv3TmQk', 'video-01.mp4'] },
+  { id: 'queimape-resultado-2025', fotos: 5, imagens: ['assets/img/news-queimape-2025.jpg'], videos: ['bqV1kv3TmQk'] },
   { id: 'producao-agua-parana', fotos: 0, videos: ['Ei3qk8wq0ac'] },
   { id: 'dia-da-agua-2025', fotos: 4, videos: ['NRv2Ch5LJUY', 'hezFekOnC9A', 'LPxir7uWnwE'] },
   { id: 'dia-arvore-2024-cristalino', fotos: 13, videos: [] },
