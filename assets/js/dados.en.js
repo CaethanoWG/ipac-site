@@ -32,18 +32,18 @@ window.IPAC_DADOS = {
   ],
 
   eventos: [
-    { titulo: 'Assessment, design and repair of an erosion process and protection of the Bonitinho River spring cave', data: '2025-10-30', dataTexto: '30 Oct 2025', local: 'Formoso Indigenous Village', imagem: 'assets/img/news-formoso.jpg' },
-    { titulo: 'Results of the Queima Pé River spring restoration', data: '2025-07-01', dataTexto: 'Jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
-    { titulo: 'World Water Day 2025 — Queima Pé River spring', data: '2025-03-22', dataTexto: 'Mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
-    { titulo: 'Cultivando Água Boa and Tree Day — Spring 059', data: '2024-09-21', dataTexto: 'Sep 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-10.jpg' },
-    { titulo: 'Cultivando Água Boa and Tree Day — Springs 12 and 14', data: '2024-09-20', dataTexto: 'Sep 2024', local: 'Progresso District', imagem: 'assets/img/ev-a5ac.jpg' },
-    { titulo: 'Cultivando Água Boa — World Water Day 2024, Spring 060', data: '2024-03-22', dataTexto: 'Mar 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-03.jpg' },
-    { titulo: 'Visit of technicians from Kenya', data: '2023-11-01', dataTexto: '2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2023-11.jpg' },
-    { titulo: 'Tree Day — Spring 059', data: '2023-09-21', dataTexto: 'Sep 2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2023.jpg' },
-    { titulo: 'Tree Day — Spring 01', data: '2022-09-21', dataTexto: 'Sep 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2022.jpg' },
-    { titulo: 'PCI (Produce, Conserve and Include) Tangará da Serra', data: '2022-05-24', dataTexto: 'May 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
-    { titulo: 'Restoration of the Queima-Pé spring', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
-    { titulo: 'Workshop — Sustainability in Water Resources and Solid Waste Management', data: '2017-09-14', dataTexto: 'Sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
+    { id: 'formoso-2025', titulo: 'Assessment, design and repair of an erosion process and protection of the Bonitinho River spring cave', data: '2025-10-30', dataTexto: '30 Oct 2025', local: 'Formoso Indigenous Village', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'queimape-resultado-2025', titulo: 'Results of the Queima Pé River spring restoration', data: '2025-07-01', dataTexto: 'Jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
+    { id: 'dia-da-agua-2025', titulo: 'World Water Day 2025 — Queima Pé River spring', data: '2025-03-22', dataTexto: 'Mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
+    { id: 'dia-arvore-2024-cristalino', titulo: 'Cultivando Água Boa and Tree Day — Spring 059', data: '2024-09-21', dataTexto: 'Sep 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-10.jpg' },
+    { id: 'dia-arvore-2024-ararao', titulo: 'Cultivando Água Boa and Tree Day — Springs 12 and 14', data: '2024-09-20', dataTexto: 'Sep 2024', local: 'Progresso District', imagem: 'assets/img/ev-a5ac.jpg' },
+    { id: 'dia-da-agua-2024', titulo: 'Cultivando Água Boa — World Water Day 2024, Spring 060', data: '2024-03-22', dataTexto: 'Mar 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-03.jpg' },
+    { id: 'quenia-2023', titulo: 'Visit of technicians from Kenya', data: '2023-11-01', dataTexto: '2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2023-11.jpg' },
+    { id: 'dia-arvore-2023', titulo: 'Tree Day — Spring 059', data: '2023-09-21', dataTexto: 'Sep 2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2023.jpg' },
+    { id: 'dia-arvore-2022', titulo: 'Tree Day — Spring 01', data: '2022-09-21', dataTexto: 'Sep 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2022.jpg' },
+    { id: 'pci-2022', titulo: 'PCI (Produce, Conserve and Include) Tangará da Serra', data: '2022-05-24', dataTexto: 'May 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
+    { id: 'queimape-2021', titulo: 'Restoration of the Queima-Pé spring', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
+    { id: 'workshop-2017', titulo: 'Workshop — Sustainability in Water Resources and Solid Waste Management', data: '2017-09-14', dataTexto: 'Sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
   ],
 
   videos: [
@@ -97,12 +97,12 @@ window.IPAC_DADOS = {
     { titulo: 'Students join an environmental action at the Ararão River spring in the Progresso District', fonte: 'Enfoque Business', data: '2024-09-17', link: 'https://enfoquebusiness.com.br/alunos-participam-de-acao-ambiental-em-nascente-do-rio-ararao-no-distrito-de-progresso/' },
     { titulo: '“Cultivando Água Boa Tangará” continues restoring the Queima Pé and Ararão rivers', fonte: 'Diário da Serra', data: '2024-09-09', imagem: 'assets/img/news-cav-2024.jpg', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MjExMDUx/RECUPERACAO-%E2%80%93-Projeto-%E2%80%98Cultivando-Agua-Boa-Tangara%E2%80%99-segue-com-acoes-de-revitalizacao-do-Queima-Pe-e-Ararao' },
     { titulo: 'IPAC to assess rural properties in the upper Queima Pé and Ararão basins', fonte: 'Diário da Serra', data: '2021-10-20', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTk1NjIz/TANGARA-DA-SERRA-%E2%80%93-IPAC-fara-diagnostico-de--propriedades-rurais-da-parte-alta-das-bacias-do-Queima-Pe-e-Ararao' },
-    { titulo: 'Vertical drains: technology developed in Tangará da Serra to be expanded to Sorriso', fonte: 'Diário da Serra', data: '2017-09-18', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTk0MzQ4/DRENOS-VERTICAIS-%E2%80%93-Tecnologia-desenvolvida-em-Tangara-da-Serra-devera-ser-ampliada-no-municipio-de-Sorriso' },
-    { titulo: 'With renowned speakers, management workshop takes place in Tangará', fonte: 'Diário da Serra', data: '2017-09-18', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTcwOTk5/Com-palestrantes-renomados-workshop-sobre-gestao-aconteceu-em-Tangara' },
-    { titulo: 'Workshop on water resources and solid waste management starts Thursday', fonte: 'Diário da Serra', data: '2017-09-12', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTcwOTE5/Workshop--na-gestao-de-recursos-hidricos-e-residuos-solidos-inicia-quinta' },
-    { titulo: 'Headwaters Pact and Cultivando Água Boa presented to the State', fonte: 'Diário da Serra', data: '2015-12-05', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTYxMjc3/Pacto-das-Cabeceiras-e-Cultivando-Agua-Boa-sao-apresentados-para-Estado' },
-    { titulo: 'Water Producer Project to be presented this Friday', fonte: 'Diário da Serra', data: '2014-12-04', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTYwNTU2/Projeto-Produtor-de-Agua-sera-apresentado-nesta-sexta-feira' },
-    { titulo: 'Diamantino hosts meeting of the “Pact in Defense of the Headwaters”', fonte: 'Diário da Serra', data: '2014-04-12', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTU3NzI5/Diamantino-sedia-reuniao-de-Pacto-em-Defesa-das-Cabeceiras' }
+    { titulo: 'Vertical drains: technology developed in Tangará da Serra to be expanded to Sorriso', fonte: 'Diário da Serra', data: '2017-09-18' },
+    { titulo: 'With renowned speakers, management workshop takes place in Tangará', fonte: 'Diário da Serra', data: '2017-09-18' },
+    { titulo: 'Workshop on water resources and solid waste management starts Thursday', fonte: 'Diário da Serra', data: '2017-09-12' },
+    { titulo: 'Headwaters Pact and Cultivando Água Boa presented to the State', fonte: 'Diário da Serra', data: '2015-12-05' },
+    { titulo: 'Water Producer Project to be presented this Friday', fonte: 'Diário da Serra', data: '2014-12-04' },
+    { titulo: 'Diamantino hosts meeting of the “Pact in Defense of the Headwaters”', fonte: 'Diário da Serra', data: '2014-04-12' }
   ],
 
   produtos: [

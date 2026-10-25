@@ -32,18 +32,18 @@ window.IPAC_DADOS = {
   ],
 
   eventos: [
-    { titulo: 'Diagnóstico, proyecto y reparación de un proceso erosivo y protección de la gruta del manantial del Río Bonitinho', data: '2025-10-30', dataTexto: '30 oct 2025', local: 'Aldea Indígena del Formoso', imagem: 'assets/img/news-formoso.jpg' },
-    { titulo: 'Resultado de la recuperación del manantial del Río Queima Pé', data: '2025-07-01', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
-    { titulo: 'Día del Agua 2025 — Manantial del Río Queima Pé', data: '2025-03-22', dataTexto: 'mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
-    { titulo: 'Cultivando Água Boa y Día del Árbol — Manantial 059', data: '2024-09-21', dataTexto: 'sep 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-10.jpg' },
-    { titulo: 'Cultivando Água Boa y Día del Árbol — Manantiales 12 y 14', data: '2024-09-20', dataTexto: 'sep 2024', local: 'Distrito de Progresso', imagem: 'assets/img/ev-a5ac.jpg' },
-    { titulo: 'Cultivando Água Boa — Día del Agua 2024, Manantial 060', data: '2024-03-22', dataTexto: 'mar 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-03.jpg' },
-    { titulo: 'Visita de técnicos de Kenia', data: '2023-11-01', dataTexto: '2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2023-11.jpg' },
-    { titulo: 'Día del Árbol — Manantial 059', data: '2023-09-21', dataTexto: 'sep 2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2023.jpg' },
-    { titulo: 'Día del Árbol — Manantial 01', data: '2022-09-21', dataTexto: 'sep 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2022.jpg' },
-    { titulo: 'PCI (Producir, Conservar e Incluir) Tangará da Serra', data: '2022-05-24', dataTexto: 'may 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
-    { titulo: 'Recuperación del Manantial del Queima-Pé', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
-    { titulo: 'Taller — Sostenibilidad en la Gestión de Recursos Hídricos y Residuos Sólidos', data: '2017-09-14', dataTexto: 'sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
+    { id: 'formoso-2025', titulo: 'Diagnóstico, proyecto y reparación de un proceso erosivo y protección de la gruta del manantial del Río Bonitinho', data: '2025-10-30', dataTexto: '30 oct 2025', local: 'Aldea Indígena del Formoso', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'queimape-resultado-2025', titulo: 'Resultado de la recuperación del manantial del Río Queima Pé', data: '2025-07-01', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
+    { id: 'dia-da-agua-2025', titulo: 'Día del Agua 2025 — Manantial del Río Queima Pé', data: '2025-03-22', dataTexto: 'mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
+    { id: 'dia-arvore-2024-cristalino', titulo: 'Cultivando Água Boa y Día del Árbol — Manantial 059', data: '2024-09-21', dataTexto: 'sep 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-10.jpg' },
+    { id: 'dia-arvore-2024-ararao', titulo: 'Cultivando Água Boa y Día del Árbol — Manantiales 12 y 14', data: '2024-09-20', dataTexto: 'sep 2024', local: 'Distrito de Progresso', imagem: 'assets/img/ev-a5ac.jpg' },
+    { id: 'dia-da-agua-2024', titulo: 'Cultivando Água Boa — Día del Agua 2024, Manantial 060', data: '2024-03-22', dataTexto: 'mar 2024', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2024-03.jpg' },
+    { id: 'quenia-2023', titulo: 'Visita de técnicos de Kenia', data: '2023-11-01', dataTexto: '2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2023-11.jpg' },
+    { id: 'dia-arvore-2023', titulo: 'Día del Árbol — Manantial 059', data: '2023-09-21', dataTexto: 'sep 2023', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2023.jpg' },
+    { id: 'dia-arvore-2022', titulo: 'Día del Árbol — Manantial 01', data: '2022-09-21', dataTexto: 'sep 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-arvore-2022.jpg' },
+    { id: 'pci-2022', titulo: 'PCI (Producir, Conservar e Incluir) Tangará da Serra', data: '2022-05-24', dataTexto: 'may 2022', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-pci.jpg' },
+    { id: 'queimape-2021', titulo: 'Recuperación del Manantial del Queima-Pé', data: '2021-01-01', dataTexto: '2021', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-queimape.jpg' },
+    { id: 'workshop-2017', titulo: 'Taller — Sostenibilidad en la Gestión de Recursos Hídricos y Residuos Sólidos', data: '2017-09-14', dataTexto: 'sep 2017', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-workshop.jpg' }
   ],
 
   videos: [
@@ -97,12 +97,12 @@ window.IPAC_DADOS = {
     { titulo: 'Alumnos participan en una acción ambiental en el manantial del Río Ararão, en el Distrito de Progresso', fonte: 'Enfoque Business', data: '2024-09-17', link: 'https://enfoquebusiness.com.br/alunos-participam-de-acao-ambiental-em-nascente-do-rio-ararao-no-distrito-de-progresso/' },
     { titulo: 'El proyecto “Cultivando Água Boa Tangará” sigue con la revitalización del Queima Pé y del Ararão', fonte: 'Diário da Serra', data: '2024-09-09', imagem: 'assets/img/news-cav-2024.jpg', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MjExMDUx/RECUPERACAO-%E2%80%93-Projeto-%E2%80%98Cultivando-Agua-Boa-Tangara%E2%80%99-segue-com-acoes-de-revitalizacao-do-Queima-Pe-e-Ararao' },
     { titulo: 'El IPAC hará un diagnóstico de propiedades rurales de la parte alta de las cuencas del Queima Pé y del Ararão', fonte: 'Diário da Serra', data: '2021-10-20', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTk1NjIz/TANGARA-DA-SERRA-%E2%80%93-IPAC-fara-diagnostico-de--propriedades-rurais-da-parte-alta-das-bacias-do-Queima-Pe-e-Ararao' },
-    { titulo: 'Drenes verticales: la tecnología desarrollada en Tangará da Serra se ampliará al municipio de Sorriso', fonte: 'Diário da Serra', data: '2017-09-18', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTk0MzQ4/DRENOS-VERTICAIS-%E2%80%93-Tecnologia-desenvolvida-em-Tangara-da-Serra-devera-ser-ampliada-no-municipio-de-Sorriso' },
-    { titulo: 'Con disertantes reconocidos, se realizó en Tangará el taller sobre gestión', fonte: 'Diário da Serra', data: '2017-09-18', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTcwOTk5/Com-palestrantes-renomados-workshop-sobre-gestao-aconteceu-em-Tangara' },
-    { titulo: 'El taller sobre gestión de recursos hídricos y residuos sólidos comienza el jueves', fonte: 'Diário da Serra', data: '2017-09-12', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTcwOTE5/Workshop--na-gestao-de-recursos-hidricos-e-residuos-solidos-inicia-quinta' },
-    { titulo: 'El Pacto de las Cabeceras y Cultivando Água Boa se presentan al Estado', fonte: 'Diário da Serra', data: '2015-12-05', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTYxMjc3/Pacto-das-Cabeceiras-e-Cultivando-Agua-Boa-sao-apresentados-para-Estado' },
-    { titulo: 'El Proyecto Productor de Agua se presentará este viernes', fonte: 'Diário da Serra', data: '2014-12-04', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTYwNTU2/Projeto-Produtor-de-Agua-sera-apresentado-nesta-sexta-feira' },
-    { titulo: 'Diamantino es sede de la reunión del “Pacto en Defensa de las Cabeceras”', fonte: 'Diário da Serra', data: '2014-04-12', link: 'https://diariodaserra.com.br/Noticia/Detalhes/MTU3NzI5/Diamantino-sedia-reuniao-de-Pacto-em-Defesa-das-Cabeceiras' }
+    { titulo: 'Drenes verticales: la tecnología desarrollada en Tangará da Serra se ampliará al municipio de Sorriso', fonte: 'Diário da Serra', data: '2017-09-18' },
+    { titulo: 'Con disertantes reconocidos, se realizó en Tangará el taller sobre gestión', fonte: 'Diário da Serra', data: '2017-09-18' },
+    { titulo: 'El taller sobre gestión de recursos hídricos y residuos sólidos comienza el jueves', fonte: 'Diário da Serra', data: '2017-09-12' },
+    { titulo: 'El Pacto de las Cabeceras y Cultivando Água Boa se presentan al Estado', fonte: 'Diário da Serra', data: '2015-12-05' },
+    { titulo: 'El Proyecto Productor de Agua se presentará este viernes', fonte: 'Diário da Serra', data: '2014-12-04' },
+    { titulo: 'Diamantino es sede de la reunión del “Pacto en Defensa de las Cabeceras”', fonte: 'Diário da Serra', data: '2014-04-12' }
   ],
 
   produtos: [

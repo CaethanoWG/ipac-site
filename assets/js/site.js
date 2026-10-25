@@ -37,6 +37,10 @@
       direitos: 'Todos os direitos reservados.', linksLegais: 'Links legais', rede: function (n) { return n + ' do IPAC'; },
       emAndamento: 'Em andamento', concluido: 'Concluído', situacaoConfirmar: 'situação a confirmar', conhecaProjeto: 'Conheça o projeto', acaoProjeto: 'Ação do projeto', foto: 'Foto', fotoPendente: 'foto aguardando envio', assistirVideo: 'Assistir ao vídeo',
       lerArtigo: 'Ler artigo completo (PDF)', lerMateria: 'Ler matéria', emPortugues: '',
+      verGaleria: 'Ver fotos e vídeos', fotos: function (n) { return n + (n === 1 ? ' foto' : ' fotos'); }, videos: function (n) { return n + (n === 1 ? ' vídeo' : ' vídeos'); },
+      tituloFotos: 'Fotos', tituloVideos: 'Vídeos', voltarPara: function (s) { return 'Voltar para ' + s; }, ampliarFoto: function (i, n) { return 'Ampliar foto ' + i + ' de ' + n; },
+      fotoDe: function (i, n) { return 'Foto ' + i + ' de ' + n; }, anterior: 'Foto anterior', proxima: 'Próxima foto', fechar: 'Fechar',
+      galeriaNaoEncontrada: 'Galeria não encontrada.',
       semEventos: '<strong>Nenhum evento agendado no momento.</strong><br>Acompanhe nossas redes sociais para saber das próximas ações.',
       verifique: 'Verifique os campos destacados.', enviando: 'Enviando…', enviar: 'Enviar mensagem',
       previa: function (e) { return 'Esta é uma pré-visualização local: o envio funciona quando o site estiver publicado na hospedagem. Enquanto isso, escreva para ' + e + '.'; },
@@ -69,6 +73,10 @@
       direitos: 'All rights reserved.', linksLegais: 'Legal links', rede: function (n) { return 'IPAC on ' + n; },
       emAndamento: 'Ongoing', concluido: 'Completed', situacaoConfirmar: 'status to be confirmed', conhecaProjeto: 'Explore the project', acaoProjeto: 'Project activity', foto: 'Photo', fotoPendente: 'photo pending', assistirVideo: 'Watch the video',
       lerArtigo: 'Read the full article (PDF)', lerMateria: 'Read the story', emPortugues: 'in Portuguese',
+      verGaleria: 'See photos and videos', fotos: function (n) { return n + (n === 1 ? ' photo' : ' photos'); }, videos: function (n) { return n + (n === 1 ? ' video' : ' videos'); },
+      tituloFotos: 'Photos', tituloVideos: 'Videos', voltarPara: function (s) { return 'Back to ' + s; }, ampliarFoto: function (i, n) { return 'Enlarge photo ' + i + ' of ' + n; },
+      fotoDe: function (i, n) { return 'Photo ' + i + ' of ' + n; }, anterior: 'Previous photo', proxima: 'Next photo', fechar: 'Close',
+      galeriaNaoEncontrada: 'Gallery not found.',
       semEventos: '<strong>No events scheduled at the moment.</strong><br>Follow us on social media to hear about upcoming activities.',
       verifique: 'Please check the highlighted fields.', enviando: 'Sending…', enviar: 'Send message',
       previa: function (e) { return 'This is a local preview: messages are sent once the site is published on the server. Meanwhile, write to ' + e + '.'; },
@@ -101,6 +109,10 @@
       direitos: 'Todos los derechos reservados.', linksLegais: 'Enlaces legales', rede: function (n) { return n + ' del IPAC'; },
       emAndamento: 'En curso', concluido: 'Concluido', situacaoConfirmar: 'situación a confirmar', conhecaProjeto: 'Conoce el proyecto', acaoProjeto: 'Acción del proyecto', foto: 'Foto', fotoPendente: 'foto pendiente', assistirVideo: 'Ver el video',
       lerArtigo: 'Leer el artículo completo (PDF)', lerMateria: 'Leer la nota', emPortugues: 'en portugués',
+      verGaleria: 'Ver fotos y videos', fotos: function (n) { return n + (n === 1 ? ' foto' : ' fotos'); }, videos: function (n) { return n + (n === 1 ? ' video' : ' videos'); },
+      tituloFotos: 'Fotos', tituloVideos: 'Videos', voltarPara: function (s) { return 'Volver a ' + s; }, ampliarFoto: function (i, n) { return 'Ampliar foto ' + i + ' de ' + n; },
+      fotoDe: function (i, n) { return 'Foto ' + i + ' de ' + n; }, anterior: 'Foto anterior', proxima: 'Foto siguiente', fechar: 'Cerrar',
+      galeriaNaoEncontrada: 'Galería no encontrada.',
       semEventos: '<strong>No hay eventos programados por ahora.</strong><br>Sigue nuestras redes sociales para conocer las próximas acciones.',
       verifique: 'Revisa los campos destacados.', enviando: 'Enviando…', enviar: 'Enviar mensaje',
       previa: function (e) { return 'Esta es una vista previa local: el envío funciona cuando el sitio esté publicado en el servidor. Mientras tanto, escribe a ' + e + '.'; },
@@ -139,6 +151,9 @@
     pix: svg('<path d="m12 2 4.5 4.5L12 11 7.5 6.5Z"/><path d="m12 13 4.5 4.5L12 22l-4.5-4.5Z"/><path d="M2 12l4.5-4.5L11 12l-4.5 4.5Z"/><path d="m13 12 4.5-4.5L22 12l-4.5 4.5Z"/>'),
     menu: svg('<path d="M4 6h16M4 12h16M4 18h16"/>'),
     fechar: svg('<path d="M18 6 6 18M6 6l12 12"/>'),
+    camera: svg('<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"/><circle cx="12" cy="13" r="3"/>'),
+    esquerda: svg('<path d="m15 18-6-6 6-6"/>'),
+    direita: svg('<path d="m9 18 6-6-6-6"/>'),
     pessoa: svg('<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'),
     download: svg('<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>'),
     relogio: svg('<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'),
@@ -190,7 +205,7 @@
   function seletorIdiomas() {
     var arquivo = location.pathname.split('/').pop() || 'index.html';
     return '<nav class="idiomas" aria-label="' + T.idioma + '">' + [['pt', 'PT', 'Português'], ['es', 'ES', 'Español'], ['en', 'EN', 'English']].map(function (l) {
-      var href = BASE + (l[0] === 'pt' ? '' : l[0] + '/') + arquivo + location.hash;
+      var href = BASE + (l[0] === 'pt' ? '' : l[0] + '/') + arquivo + location.search + location.hash;
       return '<a href="' + href + '" lang="' + l[0] + '" hreflang="' + l[0] + '" title="' + l[2] + '"' + (l[0] === LANG ? ' aria-current="true"' : '') + '>' + l[1] + '</a>';
     }).join('') + '</nav>';
   }
@@ -372,10 +387,31 @@
     if (p.confirmar) t += ' <span class="provisorio">' + T.situacaoConfirmar + '</span>';
     return t;
   }
+  /* Galerias (galerias.js): a imagem do card leva à página oculta galeria.html?id=… */
+  function galeria(id) {
+    var g = (window.IPAC_GALERIAS || []).filter(function (x) { return x.id === id; })[0];
+    if (!g) return null;
+    var fotos = (g.imagens || []).slice();
+    for (var i = 1; i <= (g.fotos || 0); i++) fotos.push('assets/img/galerias/' + g.id + '/' + (i < 10 ? '0' : '') + i + '.jpg');
+    return { id: g.id, fotos: fotos, videos: g.videos || [], href: 'galeria.html?id=' + encodeURIComponent(g.id) };
+  }
+  function resumoGaleria(g) {
+    return [g.fotos.length ? T.fotos(g.fotos.length) : '', g.videos.length ? T.videos(g.videos.length) : ''].filter(Boolean).join(' · ');
+  }
+  // Imagem do card: vira link para a galeria quando ela existe
+  function imgCard(src, g, extra) {
+    var conteudo = '<img src="' + asset(src) + '" alt="" loading="lazy">' + (extra || '');
+    if (!g) return '<div class="card-img">' + conteudo + '</div>';
+    return '<a class="card-img card-img-link" href="' + g.href + '" aria-label="' + T.verGaleria + ' (' + resumoGaleria(g) + ')">' + conteudo +
+      '<span class="card-galeria">' + I.camera + resumoGaleria(g) + '</span></a>';
+  }
+
   function cardProjeto(p) {
-    var titulo = p.link ? '<a href="' + p.link + '">' + esc(p.titulo) + '</a>' : esc(p.titulo);
+    var g = galeria(p.id);
+    var href = p.link || (g && g.href);
+    var titulo = href ? '<a href="' + href + '">' + esc(p.titulo) + '</a>' : esc(p.titulo);
     var img = p.imagem ?
-      '<div class="card-img"><img src="' + asset(p.imagem) + '" alt="" loading="lazy">' + (p.credito ? '<span class="card-credito">' + T.foto + ': ' + esc(p.credito) + '</span>' : '') + '</div>' :
+      imgCard(p.imagem, g, p.credito ? '<span class="card-credito">' + T.foto + ': ' + esc(p.credito) + '</span>' : '') :
       '<div class="card-img card-img-vazia">' + I.folha + '<span class="provisorio">' + T.fotoPendente + '</span></div>';
     return '<article class="card">' + img +
       '<div class="card-corpo">' +
@@ -400,11 +436,12 @@
     var partes = (e.dataTexto || '').split(' ');
     var grande = partes[0];
     var pequeno = partes.slice(1).join(' ');
+    var g = galeria(e.id);
     return '<article class="card">' +
       '<div class="evento-data">' + esc(grande) + (pequeno ? '<small>' + esc(pequeno) + '</small>' : '') + '</div>' +
-      '<div class="card-img"><img src="' + asset(e.imagem) + '" alt="" loading="lazy"></div>' +
+      imgCard(e.imagem, g) +
       '<div class="card-corpo">' +
-        '<h3>' + esc(e.titulo) + '</h3>' +
+        '<h3>' + (g ? '<a href="' + g.href + '">' + esc(e.titulo) + '</a>' : esc(e.titulo)) + '</h3>' +
         '<div class="card-rodape card-meta">' + I.local.replace('<svg', '<svg width="14" height="14"') + ' ' + esc(e.local) + '</div>' +
       '</div></article>';
   }
@@ -492,10 +529,13 @@
       '<div class="vazio">' + I.calendario + '<p class="mb-0">' + T.semEventos + '</p></div>';
     ant.innerHTML = passados.map(cardEvento).join('');
 
-    // Vídeos: só a capa local até o clique, para não carregar o YouTube (e seus cookies) sem necessidade
     var vid = $('#eventos-videos');
     if (!vid) return;
     vid.innerHTML = (DADOS.videos || []).map(cardVideo).join('');
+    ativarVideos(vid);
+  }
+  // Vídeos: só a capa local até o clique, para não carregar o YouTube (e seus cookies) sem necessidade
+  function ativarVideos(vid) {
     vid.addEventListener('click', function (e) {
       var b = e.target.closest('[data-video]');
       if (!b) return;
@@ -514,10 +554,101 @@
         '<img src="' + asset(v.capa) + '" alt="" loading="lazy">' +
         '<span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg></span>' +
       '</button></div>' +
-      '<div class="card-corpo">' +
+      (v.local ? '<div class="card-corpo">' +
         '<h3>' + esc(v.titulo) + '</h3>' +
         '<div class="card-rodape card-meta">' + I.local.replace('<svg', '<svg width="14" height="14"') + ' ' + esc(v.local) + (v.dataTexto ? ' · ' + esc(v.dataTexto) : '') + '</div>' +
-      '</div></article>';
+      '</div>' : '') + '</article>';
+  }
+
+  /* ---------- Galeria (página oculta: galeria.html?id=…) ---------- */
+  function renderGaleria() {
+    var el = $('#galeria');
+    if (!el) return;
+    var id = new URLSearchParams(location.search).get('id') || '';
+    var item = null, ehEvento = false;
+    (DADOS.eventos || []).forEach(function (e) { if (e.id === id) { item = e; ehEvento = true; } });
+    (DADOS.projetos || []).forEach(function (p) { if (p.id === id) item = p; });
+    var g = galeria(id);
+    var voltar = ehEvento ? ['eventos.html', T.m.eventos] : ['programas.html', T.m.programas];
+    var trilha = $('#galeria-trilha');
+    trilha.innerHTML = '<a href="index.html">' + T.m.inicio + '</a><span>/</span><a href="' + voltar[0] + '">' + esc(voltar[1]) + '</a>' + (item ? '<span>/</span>' + esc(item.titulo) : '');
+    $$('.galeria-voltar').forEach(function (a) { a.href = voltar[0]; a.innerHTML = '<span class="seta seta-voltar" aria-hidden="true">←</span> ' + esc(T.voltarPara(voltar[1])); });
+    if (!item || !g) { $('#galeria-titulo').textContent = T.galeriaNaoEncontrada; return; }
+
+    document.title = item.titulo + ' — IPAC';
+    $('#galeria-titulo').textContent = item.titulo;
+    $('#galeria-meta').textContent = [item.local, item.dataTexto || item.periodo, resumoGaleria(g)].filter(Boolean).join(' · ');
+    if (item.imagem) { var topo = $('#galeria-topo-img'); topo.src = asset(item.imagem); topo.hidden = false; }
+
+    var n = g.fotos.length, html = '';
+    // projetos trazem mapas e gráficos: miniatura inteira, sem recorte
+    if (n) html += '<h2 class="galeria-secao">' + T.tituloFotos + ' <span>(' + n + ')</span></h2><ul class="galeria-fotos' + (ehEvento ? '' : ' galeria-docs') + '">' + g.fotos.map(function (f, i) {
+      return '<li><button type="button" data-foto="' + i + '" aria-label="' + T.ampliarFoto(i + 1, n) + '"><img src="' + asset(f) + '" alt="" loading="lazy"></button></li>';
+    }).join('') + '</ul>';
+    if (g.videos.length) html += '<h2 class="galeria-secao">' + T.tituloVideos + ' <span>(' + g.videos.length + ')</span></h2><div class="grade grade-3 galeria-videos">' + g.videos.map(function (v, i) {
+      return cardVideo({ id: v, titulo: item.titulo + ' — ' + T.tituloVideos.toLowerCase() + ' ' + (i + 1), capa: 'assets/img/galerias/videos/' + v + '.jpg' });
+    }).join('') + '</div>';
+    el.innerHTML = html;
+    var vids = $('.galeria-videos', el);
+    if (vids) ativarVideos(vids);
+    el.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-foto]');
+      if (b) abrirFoto(g.fotos, +b.getAttribute('data-foto'), item.titulo, b);
+    });
+  }
+
+  // Visualizador de fotos: setas do teclado, Esc, deslizar no celular
+  function abrirFoto(fotos, atual, titulo, origem) {
+    var caixa = document.createElement('div');
+    caixa.className = 'visualizador';
+    caixa.setAttribute('role', 'dialog');
+    caixa.setAttribute('aria-modal', 'true');
+    caixa.setAttribute('aria-label', titulo);
+    caixa.innerHTML = '<figure><img alt=""><figcaption aria-live="polite"></figcaption></figure>' +
+      '<button type="button" class="vis-fechar" aria-label="' + T.fechar + '">' + I.fechar + '</button>' +
+      (fotos.length > 1 ? '<button type="button" class="vis-ant" aria-label="' + T.anterior + '">' + I.esquerda + '</button>' +
+        '<button type="button" class="vis-prox" aria-label="' + T.proxima + '">' + I.direita + '</button>' : '');
+    var img = $('img', caixa), legenda = $('figcaption', caixa);
+    function mostrar(i) {
+      atual = (i + fotos.length) % fotos.length;
+      img.src = asset(fotos[atual]);
+      img.alt = titulo + ' — ' + T.fotoDe(atual + 1, fotos.length);
+      legenda.textContent = T.fotoDe(atual + 1, fotos.length);
+    }
+    function fechar() {
+      document.removeEventListener('keydown', tecla);
+      caixa.remove();
+      document.body.style.overflow = '';
+      if (origem) origem.focus();
+    }
+    function tecla(e) {
+      if (e.key === 'Escape') fechar();
+      else if (e.key === 'ArrowLeft') mostrar(atual - 1);
+      else if (e.key === 'ArrowRight') mostrar(atual + 1);
+      else if (e.key === 'Tab') { // mantém o foco dentro do visualizador
+        var bt = $$('button', caixa), i = bt.indexOf(document.activeElement);
+        e.preventDefault();
+        bt[(i + (e.shiftKey ? -1 : 1) + bt.length) % bt.length].focus();
+      }
+    }
+    caixa.addEventListener('click', function (e) {
+      if (e.target.closest('.vis-fechar') || e.target === caixa) fechar();
+      else if (e.target.closest('.vis-ant')) mostrar(atual - 1);
+      else if (e.target.closest('.vis-prox')) mostrar(atual + 1);
+    });
+    var x0 = null;
+    caixa.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    caixa.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 50 && fotos.length > 1) mostrar(atual + (dx < 0 ? 1 : -1));
+      x0 = null;
+    });
+    document.addEventListener('keydown', tecla);
+    document.body.appendChild(caixa);
+    document.body.style.overflow = 'hidden';
+    mostrar(atual);
+    $('.vis-fechar', caixa).focus();
   }
 
   function renderArtigos() {
@@ -536,7 +667,9 @@
     resto.forEach(function (n) { var a = n.data.slice(0, 4); (porAno[a] = porAno[a] || []).push(n); });
     lista.innerHTML = Object.keys(porAno).sort().reverse().map(function (ano) {
       return '<h2 class="noticia-ano">' + ano + '</h2><ul class="lista-noticias">' + porAno[ano].map(function (n) {
-        return '<li><a href="' + esc(n.link) + '" target="_blank" rel="noopener"><span class="data">' + dataBR(n.data) + '</span><span class="titulo">' + esc(n.titulo) + '</span><span class="fonte">' + esc(n.fonte) + '</span></a></li>';
+        var conteudo = '<span class="data">' + dataBR(n.data) + '</span><span class="titulo">' + esc(n.titulo) + '</span><span class="fonte">' + esc(n.fonte) + '</span>';
+        // sem "link": a matéria aparece só como registro, sem abrir o site do jornal
+        return '<li>' + (n.link ? '<a href="' + esc(n.link) + '" target="_blank" rel="noopener">' + conteudo + '</a>' : '<div class="sem-link">' + conteudo + '</div>') + '</li>';
       }).join('') + '</ul>';
     }).join('');
   }
@@ -903,6 +1036,7 @@
   renderInicio();
   renderProgramas();
   renderEventos();
+  renderGaleria();
   renderArtigos();
   renderNoticias();
   configurarComites();

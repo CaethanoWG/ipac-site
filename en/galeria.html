@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Gallery — IPAC</title>
+  <meta name="description" content="Photos and videos from IPAC events and projects.">
+  <link rel="alternate" hreflang="pt-BR" href="../galeria.html">
+  <link rel="alternate" hreflang="es" href="../es/galeria.html">
+  <meta name="theme-color" content="#10301f">
+  <link rel="icon" href="../assets/img/logo-marca.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<!-- Página fora do menu: aberta pela imagem de cada evento ou projeto (galeria.html?id=…).
+     As fotos e vídeos ficam em assets/js/galerias.js. -->
+<body data-page="galeria">
+  <div id="site-header"></div>
+
+  <main id="conteudo">
+    <section class="pagina-topo">
+      <img class="topo-img" id="galeria-topo-img" src="" alt="" hidden>
+      <div class="container">
+        <nav class="trilha" id="galeria-trilha" aria-label="You are here"><a href="index.html">Home</a></nav>
+        <h1 id="galeria-titulo">Gallery</h1>
+        <p id="galeria-meta"></p>
+        <div class="galeria-acoes"><a class="btn btn-contorno btn-sm galeria-voltar" href="eventos.html">Back</a></div>
+      </div>
+    </section>
+
+    <section class="secao secao-branca">
+      <div class="container">
+        <div id="galeria"></div>
+        <div class="galeria-rodape"><a class="btn btn-contorno galeria-voltar" href="eventos.html">Back</a></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/dados.en.js"></script>
+  <script src="../assets/js/galerias.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
