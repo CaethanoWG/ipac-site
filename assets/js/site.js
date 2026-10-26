@@ -27,9 +27,9 @@
         programas: 'Programas & Projetos', andamento: 'Em andamento', concluidos: 'Concluídos', eventos: 'Eventos', artigos: 'Biblioteca Virtual',
         noticias: 'Notícias Verdes', faq: 'FAQ', transparencia: 'Transparência', contato: 'Contato' },
       newsTitulo: 'Receba as novidades do IPAC', newsTexto: 'Ações, eventos e conteúdos sobre sensibilização ambiental e o ECA Ambiental, direto no seu e-mail.',
-      newsPlaceholder: 'Seu melhor e-mail', newsBotao: 'Quero receber',
+      newsNome: 'Seu nome', newsPlaceholder: 'Seu melhor e-mail', newsBotao: 'Quero receber',
       newsConsent: 'Aceito receber e-mails do IPAC e posso cancelar quando quiser. <a href="privacidade.html">Privacidade</a>',
-      newsOk: 'Pronto! Seu e-mail foi cadastrado para receber as novidades do IPAC.', newsInvalido: 'Informe um e-mail válido e marque a autorização.',
+      newsOk: 'Pronto! Seu e-mail foi cadastrado para receber as novidades do IPAC.', newsInvalido: 'Informe seu nome, um e-mail válido e marque a autorização.',
       newsErro: 'Não foi possível cadastrar agora. Tente novamente mais tarde.', newsPrevia: 'Pré-visualização local: o cadastro funciona quando o site estiver publicado na hospedagem.',
       logoParceiro: 'Espaço para logo', parceiroLink: function (n) { return 'Site de ' + n; },
       seloEstadual: 'Selo de Utilidade Pública Estadual – Lei nº 11.403, de 01/06/2021',
@@ -65,9 +65,9 @@
         programas: 'Programs & Projects', andamento: 'Ongoing', concluidos: 'Completed', eventos: 'Events', artigos: 'Virtual Library',
         noticias: 'Green News', faq: 'FAQ', transparencia: 'Transparency', contato: 'Contact' },
       newsTitulo: 'Get IPAC news by e-mail', newsTexto: 'Activities, events and content on environmental awareness and the ECA Ambiental, straight to your inbox.',
-      newsPlaceholder: 'Your e-mail address', newsBotao: 'Subscribe',
+      newsNome: 'Your name', newsPlaceholder: 'Your e-mail address', newsBotao: 'Subscribe',
       newsConsent: 'I agree to receive e-mails from IPAC and can unsubscribe at any time. <a href="privacidade.html">Privacy</a>',
-      newsOk: 'Done! Your e-mail has been added to IPAC’s mailing list.', newsInvalido: 'Please enter a valid e-mail and tick the consent box.',
+      newsOk: 'Done! Your e-mail has been added to IPAC’s mailing list.', newsInvalido: 'Please enter your name, a valid e-mail and tick the consent box.',
       newsErro: 'We could not subscribe you right now. Please try again later.', newsPrevia: 'Local preview: subscriptions work once the site is published on the server.',
       logoParceiro: 'Logo space', parceiroLink: function (n) { return n + ' website'; },
       seloEstadual: 'State Public Utility seal – Law No. 11,403 of 06/01/2021',
@@ -103,9 +103,9 @@
         programas: 'Programas y Proyectos', andamento: 'En curso', concluidos: 'Concluidos', eventos: 'Eventos', artigos: 'Biblioteca Virtual',
         noticias: 'Noticias Verdes', faq: 'Preguntas', transparencia: 'Transparencia', contato: 'Contacto' },
       newsTitulo: 'Recibe las novedades del IPAC', newsTexto: 'Acciones, eventos y contenidos sobre sensibilización ambiental y el ECA Ambiental, directo en tu correo.',
-      newsPlaceholder: 'Tu correo electrónico', newsBotao: 'Quiero recibirlas',
+      newsNome: 'Tu nombre', newsPlaceholder: 'Tu correo electrónico', newsBotao: 'Quiero recibirlas',
       newsConsent: 'Acepto recibir correos del IPAC y puedo darme de baja cuando quiera. <a href="privacidade.html">Privacidad</a>',
-      newsOk: '¡Listo! Tu correo fue registrado para recibir las novedades del IPAC.', newsInvalido: 'Escribe un correo válido y marca la autorización.',
+      newsOk: '¡Listo! Tu correo fue registrado para recibir las novedades del IPAC.', newsInvalido: 'Escribe tu nombre, un correo válido y marca la autorización.',
       newsErro: 'No fue posible registrarte ahora. Inténtalo más tarde.', newsPrevia: 'Vista previa local: el registro funciona cuando el sitio esté publicado en el servidor.',
       logoParceiro: 'Espacio para logo', parceiroLink: function (n) { return 'Sitio de ' + n; },
       seloEstadual: 'Sello de Utilidad Pública Estatal – Ley n.º 11.403, de 01/06/2021',
@@ -342,6 +342,8 @@
           '<div class="novidades-texto"><h2>' + T.newsTitulo + '</h2><p>' + T.newsTexto + '</p></div>' +
           '<form class="novidades" id="form-novidades" novalidate>' +
             '<div class="novidades-linha">' +
+              '<label for="novidades-nome" class="sr-only">' + T.newsNome + '</label>' +
+              '<input id="novidades-nome" name="nome" type="text" autocomplete="name" required maxlength="100" placeholder="' + T.newsNome + '">' +
               '<label for="novidades-email" class="sr-only">E-mail</label>' +
               '<input id="novidades-email" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="' + T.newsPlaceholder + '">' +
               '<button class="btn btn-sol" type="submit">' + T.newsBotao + '</button>' +
@@ -922,11 +924,11 @@
   function configurarNovidades() {
     var form = $('#form-novidades');
     if (!form) return;
-    var inicio = Date.now(), aviso = $('.novidades-aviso', form), email = $('#novidades-email'), ok = $('#novidades-consentimento');
+    var inicio = Date.now(), aviso = $('.novidades-aviso', form), nome = $('#novidades-nome'), email = $('#novidades-email'), ok = $('#novidades-consentimento');
     function mostrar(tipo, txt) { aviso.textContent = txt; aviso.className = 'novidades-aviso ' + tipo; aviso.hidden = false; }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (!email.checkValidity() || !email.value.trim() || !ok.checked) { mostrar('erro', T.newsInvalido); (ok.checked ? email : ok).focus(); return; }
+      if (!nome.value.trim() || !email.checkValidity() || !email.value.trim() || !ok.checked) { mostrar('erro', T.newsInvalido); (!nome.value.trim() ? nome : !ok.checked ? ok : email).focus(); return; }
       if (location.protocol === 'file:') { mostrar('info', T.newsPrevia); return; }
       var dados = new FormData(form);
       dados.append('tempo', String(Math.round((Date.now() - inicio) / 1000)));
