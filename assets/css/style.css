@@ -878,6 +878,10 @@ li { margin-bottom: .35em; }
 .rodape-grade { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 48px; padding-top: 56px; padding-bottom: 48px; }
 .rodape-marca { display: inline-flex; background: #fff; padding: 10px 14px; border-radius: 12px; margin-bottom: 18px; }
 .rodape-marca img { height: 54px; width: auto; }
+.rodape-selos { display: flex; gap: 14px; margin: 4px 0 20px; }
+.rodape-selos a { display: block; border-radius: 50%; transition: transform .2s; }
+.rodape-selos a:hover { transform: scale(1.06); }
+.rodape-selos img { width: 96px; height: 96px; display: block; filter: drop-shadow(0 3px 6px rgba(0,0,0,.35)); }
 .rodape p { color: var(--verde-200); line-height: 1.6; }
 .rodape h3 {
   font-family: var(--fonte-texto); font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;

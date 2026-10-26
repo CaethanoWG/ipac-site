@@ -33,6 +33,8 @@ window.IPAC_DADOS = {
 
   eventos: [
     { id: 'formoso-2025', titulo: 'Assessment, design and repair of an erosion process and protection of the Bonitinho River spring cave', data: '2025-10-30', dataTexto: '30 Oct 2025', local: 'Formoso Indigenous Village', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'escola-ecologica-sorriso-2025', titulo: 'Meeting with the Education Secretary of Sorriso – MT, Mrs. Adriana, to present the Ecological School project to be implemented in the municipal schools', data: '2025-08-22', dataTexto: '22 Aug 2025', local: 'Sorriso – MT', imagem: 'assets/img/ev-2025-08-escola-ecologica.jpg' },
+    { id: 'reuniao-sorriso-2025', titulo: 'Meeting with Mr. Clovis Picolo Filho, Environment Secretary of Sorriso – MT, to present the Lira River springs restoration program', data: '2025-08-21', dataTexto: '21 Aug 2025', local: 'Sorriso – MT', imagem: 'assets/img/ev-2025-08-sorriso.jpg' },
     { id: 'producao-agua-parana', titulo: 'Water production through soil conservation, rural road improvements and spring restoration in Paraná', data: '2025-07-29', dataTexto: 'Jul 2025', confirmar: true, local: 'Paraná, Brazil', imagem: 'assets/img/video-producao-agua.jpg' },
     { id: 'queimape-resultado-2025', titulo: 'Results of the Queima Pé River spring restoration', data: '2025-07-01', dataTexto: 'Jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
     { id: 'dia-da-agua-2025', titulo: 'World Water Day 2025 — Queima Pé River spring', data: '2025-03-22', dataTexto: 'Mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },

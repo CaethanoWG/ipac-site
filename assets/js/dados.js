@@ -42,6 +42,8 @@ window.IPAC_DADOS = {
      id: liga o evento (ou projeto) às suas fotos e vídeos em galerias.js. */
   eventos: [
     { id: 'formoso-2025', titulo: 'Diagnóstico, projeto e reparação de processo erosivo e proteção da gruta da nascente do Rio Bonitinho', data: '2025-10-30', dataTexto: '30 out 2025', local: 'Aldeia Indígena do Formoso', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'escola-ecologica-sorriso-2025', titulo: 'Reunião com a Secretária de Educação de Sorriso – MT, Sra. Adriana, para apresentar o projeto Escola Ecológica, a ser implantado nas escolas do município', data: '2025-08-22', dataTexto: '22 ago 2025', local: 'Sorriso – MT', imagem: 'assets/img/ev-2025-08-escola-ecologica.jpg' },
+    { id: 'reuniao-sorriso-2025', titulo: 'Reunião com o Sr. Clovis Picolo Filho, Secretário de Meio Ambiente de Sorriso – MT, para apresentação do programa de recuperação das nascentes do Rio Lira', data: '2025-08-21', dataTexto: '21 ago 2025', local: 'Sorriso – MT', imagem: 'assets/img/ev-2025-08-sorriso.jpg' },
     { id: 'producao-agua-parana', titulo: 'Exemplos de produção de água com conservação de solos, adequação de estradas rurais e revitalização de nascentes no Paraná', data: '2025-07-29', dataTexto: 'jul 2025', confirmar: true, local: 'Paraná', imagem: 'assets/img/video-producao-agua.jpg' },
     { id: 'queimape-resultado-2025', titulo: 'Resultado da recuperação da nascente do Rio Queima Pé', data: '2025-07-01', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
     { id: 'dia-da-agua-2025', titulo: 'Dia da Água 2025 — Nascente do Rio Queima Pé', data: '2025-03-22', dataTexto: 'mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },

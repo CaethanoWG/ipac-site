@@ -32,6 +32,8 @@
       newsOk: 'Pronto! Seu e-mail foi cadastrado para receber as novidades do IPAC.', newsInvalido: 'Informe um e-mail válido e marque a autorização.',
       newsErro: 'Não foi possível cadastrar agora. Tente novamente mais tarde.', newsPrevia: 'Pré-visualização local: o cadastro funciona quando o site estiver publicado na hospedagem.',
       logoParceiro: 'Espaço para logo', parceiroLink: function (n) { return 'Site de ' + n; },
+      seloEstadual: 'Selo de Utilidade Pública Estadual – Lei nº 11.403, de 01/06/2021',
+      seloMunicipal: 'Selo de Utilidade Pública Municipal – Lei Ordinária nº 5.327, de 30/06/2020',
       descRodape: function (c) { return c.nome + '. Organização sem fins lucrativos fundada em ' + c.fundacao + ' em ' + c.cidade + ', dedicada à defesa, preservação e recuperação ambiental e cultural. Entidade de Utilidade Pública Municipal e Estadual.'; },
       navegue: 'Navegue', participe: 'Participe', loja: 'Loja IPAC', eca: 'ECA Ambiental', perguntas: 'Perguntas frequentes', privacidade: 'Política de privacidade',
       direitos: 'Todos os direitos reservados.', linksLegais: 'Links legais', rede: function (n) { return n + ' do IPAC'; },
@@ -68,6 +70,8 @@
       newsOk: 'Done! Your e-mail has been added to IPAC’s mailing list.', newsInvalido: 'Please enter a valid e-mail and tick the consent box.',
       newsErro: 'We could not subscribe you right now. Please try again later.', newsPrevia: 'Local preview: subscriptions work once the site is published on the server.',
       logoParceiro: 'Logo space', parceiroLink: function (n) { return n + ' website'; },
+      seloEstadual: 'State Public Utility seal – Law No. 11,403 of 06/01/2021',
+      seloMunicipal: 'Municipal Public Utility seal – Ordinary Law No. 5,327 of 06/30/2020',
       descRodape: function (c) { return c.nome + ' (IPAC). A non-profit organization founded in ' + c.fundacao + ' in ' + c.cidade + ', Brazil, dedicated to the defense, preservation and restoration of the environment and culture. Recognized as a Public Utility Entity at the municipal and state levels.'; },
       navegue: 'Explore', participe: 'Get involved', loja: 'IPAC Store', eca: 'ECA Ambiental (Children’s Right to Nature)', perguntas: 'FAQ', privacidade: 'Privacy policy',
       direitos: 'All rights reserved.', linksLegais: 'Legal links', rede: function (n) { return 'IPAC on ' + n; },
@@ -104,6 +108,8 @@
       newsOk: '¡Listo! Tu correo fue registrado para recibir las novedades del IPAC.', newsInvalido: 'Escribe un correo válido y marca la autorización.',
       newsErro: 'No fue posible registrarte ahora. Inténtalo más tarde.', newsPrevia: 'Vista previa local: el registro funciona cuando el sitio esté publicado en el servidor.',
       logoParceiro: 'Espacio para logo', parceiroLink: function (n) { return 'Sitio de ' + n; },
+      seloEstadual: 'Sello de Utilidad Pública Estatal – Ley n.º 11.403, de 01/06/2021',
+      seloMunicipal: 'Sello de Utilidad Pública Municipal – Ley Ordinaria n.º 5.327, de 30/06/2020',
       descRodape: function (c) { return c.nome + ' (IPAC). Organización sin fines de lucro fundada en ' + c.fundacao + ' en ' + c.cidade + ', Brasil, dedicada a la defensa, preservación y recuperación ambiental y cultural. Entidad de Utilidad Pública municipal y estatal.'; },
       navegue: 'Navega', participe: 'Participa', loja: 'Tienda IPAC', eca: 'ECA Ambiental', perguntas: 'Preguntas frecuentes', privacidade: 'Política de privacidad',
       direitos: 'Todos los derechos reservados.', linksLegais: 'Enlaces legales', rede: function (n) { return n + ' del IPAC'; },
@@ -350,6 +356,10 @@
           '<div>' +
             '<a class="rodape-marca" href="index.html"><img src="' + BASE + 'assets/img/logo-marca.png" alt="IPAC" width="118" height="60"></a>' +
             '<p>' + esc(T.descRodape(CFG)) + '</p>' +
+            '<div class="rodape-selos">' +
+              '<a href="' + BASE + 'assets/docs/transparencia/utilidade-publica-municipal.pdf" target="_blank" rel="noopener" title="' + esc(T.seloMunicipal) + '"><img src="' + BASE + 'assets/img/selo-utilidade-municipal.png" alt="' + esc(T.seloMunicipal) + '" width="96" height="96" loading="lazy"></a>' +
+              '<a href="' + BASE + 'assets/docs/transparencia/utilidade-publica-estadual.pdf" target="_blank" rel="noopener" title="' + esc(T.seloEstadual) + '"><img src="' + BASE + 'assets/img/selo-utilidade-estadual.png" alt="' + esc(T.seloEstadual) + '" width="96" height="96" loading="lazy"></a>' +
+            '</div>' +
             redesHTML('redes-rodape') +
           '</div>' +
           '<div><h3>' + T.navegue + '</h3><ul>' +

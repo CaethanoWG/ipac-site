@@ -33,6 +33,8 @@ window.IPAC_DADOS = {
 
   eventos: [
     { id: 'formoso-2025', titulo: 'Diagnóstico, proyecto y reparación de un proceso erosivo y protección de la gruta del manantial del Río Bonitinho', data: '2025-10-30', dataTexto: '30 oct 2025', local: 'Aldea Indígena del Formoso', imagem: 'assets/img/news-formoso.jpg' },
+    { id: 'escola-ecologica-sorriso-2025', titulo: 'Reunión con la Secretaria de Educación de Sorriso – MT, Sra. Adriana, para presentar el proyecto Escuela Ecológica, que se implementará en las escuelas del municipio', data: '2025-08-22', dataTexto: '22 ago 2025', local: 'Sorriso – MT', imagem: 'assets/img/ev-2025-08-escola-ecologica.jpg' },
+    { id: 'reuniao-sorriso-2025', titulo: 'Reunión con el Sr. Clovis Picolo Filho, Secretario de Medio Ambiente de Sorriso – MT, para la presentación del programa de recuperación de los manantiales del Río Lira', data: '2025-08-21', dataTexto: '21 ago 2025', local: 'Sorriso – MT', imagem: 'assets/img/ev-2025-08-sorriso.jpg' },
     { id: 'producao-agua-parana', titulo: 'Producción de agua con conservación de suelos, adecuación de caminos rurales y revitalización de manantiales en Paraná', data: '2025-07-29', dataTexto: 'jul 2025', confirmar: true, local: 'Paraná, Brasil', imagem: 'assets/img/video-producao-agua.jpg' },
     { id: 'queimape-resultado-2025', titulo: 'Resultado de la recuperación del manantial del Río Queima Pé', data: '2025-07-01', dataTexto: 'jul 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/news-queimape-2025.jpg' },
     { id: 'dia-da-agua-2025', titulo: 'Día del Agua 2025 — Manantial del Río Queima Pé', data: '2025-03-22', dataTexto: 'mar 2025', local: 'Tangará da Serra – MT', imagem: 'assets/img/ev-2025-03.jpg' },
